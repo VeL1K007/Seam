@@ -84,7 +84,8 @@ img {
 h1,
 h2,
 h3,
-p {
+p,
+ul {
   margin: 0;
 }
 
@@ -107,7 +108,10 @@ h2 {
 .benefit-item p,
 .step-item p,
 .gallery-card p,
-.contact-wrap p {
+.contact-wrap p,
+.prep-item p,
+.faq-item p,
+.contact-note {
   color: var(--muted);
 }
 
@@ -161,6 +165,19 @@ h2 {
   color: var(--text);
 }
 
+.header-call {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 18px;
+  border-radius: 14px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
 .hero {
   padding-top: 48px;
 }
@@ -178,7 +195,10 @@ h2 {
 .service-item,
 .benefits-card,
 .gallery-card,
-.contact-card {
+.contact-card,
+.prep-card,
+.prep-item,
+.faq-item {
   background: var(--surface);
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
@@ -203,6 +223,27 @@ h2 {
   margin-top: 32px;
 }
 
+.hero-highlights {
+  list-style: none;
+  padding: 0;
+  margin-top: 24px;
+  display: grid;
+  gap: 10px;
+}
+
+.hero-highlights li {
+  position: relative;
+  padding-left: 22px;
+  color: var(--muted);
+}
+
+.hero-highlights li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--text);
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -215,7 +256,9 @@ h2 {
   transition: transform 0.18s ease, opacity 0.18s ease, background 0.18s ease;
 }
 
-.btn:hover {
+.btn:hover,
+.contact-link:hover,
+.header-call:hover {
   transform: translateY(-1px);
 }
 
@@ -311,35 +354,45 @@ h2 {
   line-height: 1.6;
 }
 
-.benefits {
+.benefits,
+.gallery,
+.contact,
+.faq {
   padding-top: 24px;
 }
 
-.benefits-grid {
+.benefits-grid,
+.contact-wrap {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(320px, 0.92fr);
   gap: 20px;
 }
 
 .benefits-card,
-.steps-card {
+.steps-card,
+.prep-card {
   border-radius: var(--radius-xl);
   padding: 32px;
 }
 
-.benefits-card {
+.benefits-card,
+.prep-card {
   background: var(--surface);
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
 }
 
-.benefit-list {
+.benefit-list,
+.steps-list,
+.prep-list,
+.faq-list {
   margin-top: 24px;
   display: grid;
   gap: 14px;
 }
 
-.benefit-item {
+.benefit-item,
+.prep-item {
   padding: 18px 20px;
   border-radius: 20px;
   background: #f6f1ea;
@@ -347,14 +400,18 @@ h2 {
 
 .benefit-item strong,
 .step-item strong,
-.gallery-card h3 {
+.gallery-card h3,
+.prep-item strong,
+.faq-item summary {
   font-size: 18px;
   line-height: 1.25;
 }
 
 .benefit-item p,
 .step-item p,
-.gallery-card p {
+.gallery-card p,
+.prep-item p,
+.faq-item p {
   margin-top: 8px;
   font-size: 15px;
 }
@@ -362,12 +419,8 @@ h2 {
 .steps-card {
   background: #23201c;
   color: #fff;
-}
-
-.steps-list {
-  margin-top: 24px;
-  display: grid;
-  gap: 14px;
+  border-radius: var(--radius-xl);
+  padding: 32px;
 }
 
 .step-item {
@@ -395,8 +448,16 @@ h2 {
   color: rgba(255, 255, 255, 0.76);
 }
 
-.gallery {
+.prep {
   padding-top: 24px;
+}
+
+.prep-list {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.prep-item {
+  min-height: 180px;
 }
 
 .gallery-grid {
@@ -420,18 +481,27 @@ h2 {
   font-weight: 700;
 }
 
-.gallery-card h3 {
-  margin-top: 16px;
+.faq-item {
+  border-radius: 24px;
+  padding: 0 22px;
+  overflow: hidden;
 }
 
-.contact {
-  padding-top: 24px;
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 22px 0;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item p {
+  padding: 0 0 22px;
 }
 
 .contact-wrap {
-  display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
-  gap: 22px;
   align-items: start;
   padding: 40px;
   border-radius: var(--radius-xl);
@@ -455,7 +525,17 @@ h2 {
 .contact-card {
   border-radius: 22px;
   padding: 22px;
-  min-height: 150px;
+  min-height: 180px;
+}
+
+.contact-link {
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.contact-note {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 14px;
 }
 
 .accent-card {
@@ -463,7 +543,8 @@ h2 {
   color: #fff;
 }
 
-.accent-card .mini-label {
+.accent-card .mini-label,
+.accent-card .contact-note {
   color: rgba(255, 255, 255, 0.62);
 }
 
@@ -485,7 +566,8 @@ h2 {
 @media (max-width: 1120px) {
   .hero-grid,
   .benefits-grid,
-  .contact-wrap {
+  .contact-wrap,
+  .prep-list {
     grid-template-columns: 1fr;
   }
 
@@ -514,11 +596,16 @@ h2 {
     gap: 14px 18px;
   }
 
+  .header-call {
+    width: 100%;
+  }
+
   .hero-copy,
   .panel-card,
   .benefits-card,
   .steps-card,
-  .contact-wrap {
+  .contact-wrap,
+  .prep-card {
     padding: 24px;
   }
 
@@ -529,7 +616,8 @@ h2 {
   .hero-mini-grid,
   .contact-grid,
   .gallery-grid,
-  .service-list {
+  .service-list,
+  .prep-list {
     grid-template-columns: 1fr;
   }
 
