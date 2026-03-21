@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<!--
-  Основная страница сайта ателье. Содержит стартовый экран с названием и описанием,
-  блок услуг, блок преимуществ, галерею и контакты. Навигация ведёт по якорям.
-  В качестве стиля используется минимальная цветовая палитра и аккуратная верстка,
-  чтобы сайт выглядел чистым, современным и готовым к расширению.
--->
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ателье в Орске — ремонт одежды</title>
+    <title>Ателье в Орске — ремонт одежды</title>
+    <meta
+      name="description"
+      content="Ателье в Орске: ремонт одежды, подгонка по фигуре, замена молний, установка пуговиц и штопка джинсов."
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Шапка с навигацией -->
-    <header>
-      <div class="container">
-        <div class="logo">Ателье</div>
-        <nav>
-          <a href="#home">Главная</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#home" class="brand">
+          <span class="brand-title">Ателье</span>
+          <span class="brand-subtitle">Ремонт одежды • Орск</span>
+        </a>
+        <nav class="site-nav" aria-label="Основная навигация">
           <a href="#services">Услуги</a>
-          <a href="#benefits">Преимущества</a>
+          <a href="#benefits">Почему мы</a>
           <a href="#gallery">Фото</a>
           <a href="#contact">Контакты</a>
         </nav>
@@ -28,146 +27,218 @@
     </header>
 
     <main>
-      <!-- Первый экран -->
-      <section id="home" class="hero">
-        <div class="container">
-          <h1>Ателье</h1>
-          <h2>Ремонт одежды</h2>
-          <p>
-            Мы аккуратно подгоним и отремонтируем вашу одежду. Работаем с любым
-            материалом, чтобы ваши вещи снова радовали.
-          </p>
-          <div class="buttons">
-            <a href="#contact" class="btn">Связаться</a>
-            <a href="#services" class="btn-outline">Услуги</a>
+      <section id="home" class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Ателье в Орске</span>
+            <h1>Ремонт и подгонка одежды</h1>
+            <p class="hero-text">
+              Подгонка по фигуре, укорачивание изделий, замена молний,
+              установка пуговиц, кнопок и клёпок, штопка джинсов,
+              реставрация кожаных и меховых изделий, подгонка штор.
+            </p>
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary">Связаться</a>
+              <a href="#services" class="btn btn-secondary">Посмотреть услуги</a>
+            </div>
           </div>
+
+          <aside class="hero-panel">
+            <div class="panel-card">
+              <p class="panel-label">Основные услуги</p>
+              <ul class="compact-list">
+                <li>Подгонка по фигуре</li>
+                <li>Замена подкладки и молний</li>
+                <li>Установка пуговиц, кнопок и клёпок</li>
+                <li>Штопка джинсов</li>
+              </ul>
+            </div>
+
+            <div class="hero-mini-grid">
+              <div class="mini-card">
+                <span class="mini-label">Адрес</span>
+                <strong>Проспект Ленина, 83</strong>
+              </div>
+              <div class="mini-card">
+                <span class="mini-label">Формат</span>
+                <strong>Одежда и шторы</strong>
+              </div>
+            </div>
+          </aside>
         </div>
       </section>
 
-      <!-- Блок услуг -->
-      <section id="services" class="services">
+      <section id="services" class="section services">
         <div class="container">
-          <h2>Наши услуги</h2>
+          <div class="section-heading">
+            <span class="eyebrow">Услуги</span>
+            <h2>Что можно сделать в ателье</h2>
+            <p>
+              Всё самое важное на одной странице — чтобы человек сразу понял,
+              подходит ли ему это ателье.
+            </p>
+          </div>
+
           <div class="service-list">
-            <div class="service-item">
+            <article class="service-item">
               <h3>Подгонка по фигуре</h3>
-              <p>
-                Точная посадка, чтобы одежда сидела идеально и подчёркивала ваши
-                достоинства.
-              </p>
-            </div>
-            <div class="service-item">
+              <p>Аккуратная посадка одежды по фигуре без лишней переделки.</p>
+            </article>
+            <article class="service-item">
               <h3>Укорачивание изделий</h3>
-              <p>
-                Бережно укоротим длину изделий, сохраняя стиль и пропорции.
-              </p>
-            </div>
-            <div class="service-item">
-              <h3>Реставрация кожи и меха</h3>
-              <p>
-                Восстановим вид любимых кожаных и меховых вещей, устраняя
-                потертости и повреждения.
-              </p>
-            </div>
-            <div class="service-item">
-              <h3>Установка фурнитуры</h3>
-              <p>
-                Пуговицы, кнопки, клёпки — заменим или установим аккуратно и
-                надёжно.
-              </p>
-            </div>
-            <div class="service-item">
+              <p>Подшив брюк, юбок, платьев и других изделий с чистым результатом.</p>
+            </article>
+            <article class="service-item">
+              <h3>Реставрация кожаных и меховых изделий</h3>
+              <p>Бережная доработка вещей, где особенно важна аккуратность.</p>
+            </article>
+            <article class="service-item">
+              <h3>Установка пуговиц, кнопок и клёпок</h3>
+              <p>Замена и установка фурнитуры для повседневной и верхней одежды.</p>
+            </article>
+            <article class="service-item">
               <h3>Замена подкладки и молний</h3>
-              <p>
-                Заменим подкладку, молнию или бегунок, продлив срок службы
-                любимой вещи.
-              </p>
-            </div>
-            <div class="service-item">
+              <p>Ремонт деталей, которые чаще всего изнашиваются в носке.</p>
+            </article>
+            <article class="service-item">
               <h3>Штопка джинсов</h3>
-              <p>
-                Сделаем незаметный ремонт джинсов, сохраняя их характер и
-                стиль.
-              </p>
-            </div>
-            <div class="service-item">
+              <p>Аккуратное восстановление ткани и швов в местах износа.</p>
+            </article>
+            <article class="service-item">
               <h3>Подгонка штор</h3>
-              <p>
-                Аккуратно подгоним длину и ширину штор, чтобы они идеально
-                вписывались в интерьер.
-              </p>
+              <p>Коррекция длины и обработка домашнего текстиля без лишней суеты.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="benefits" class="section benefits">
+        <div class="container benefits-grid">
+          <div class="benefits-card">
+            <span class="eyebrow">Почему удобно</span>
+            <h2>Понятно, спокойно и по делу</h2>
+            <div class="benefit-list">
+              <div class="benefit-item">
+                <strong>Аккуратная работа</strong>
+                <p>Внимательное отношение к вещам и к деталям ремонта.</p>
+              </div>
+              <div class="benefit-item">
+                <strong>Мелкий и сложный ремонт</strong>
+                <p>От простой замены фурнитуры до более деликатной доработки.</p>
+              </div>
+              <div class="benefit-item">
+                <strong>Понятный список услуг</strong>
+                <p>Без перегруза и лишних обещаний — только то, что реально делается.</p>
+              </div>
+              <div class="benefit-item">
+                <strong>Удобно связаться</strong>
+                <p>Сайт можно использовать как одну ссылку со всей основной информацией.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="steps-card">
+            <span class="eyebrow eyebrow-dark">Как это работает</span>
+            <h2>Простой путь для клиента</h2>
+            <div class="steps-list">
+              <div class="step-item">
+                <span>1</span>
+                <div>
+                  <strong>Смотрит услуги</strong>
+                  <p>Сразу понимает, можно ли здесь сделать нужную работу.</p>
+                </div>
+              </div>
+              <div class="step-item">
+                <span>2</span>
+                <div>
+                  <strong>Связывается</strong>
+                  <p>Уточняет детали, адрес и удобное время.</p>
+                </div>
+              </div>
+              <div class="step-item">
+                <span>3</span>
+                <div>
+                  <strong>Приходит в ателье</strong>
+                  <p>Без долгих объяснений и лишних переписок.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Блок преимуществ -->
-      <section id="benefits" class="benefits">
+      <section id="gallery" class="section gallery">
         <div class="container">
-          <h2>Почему выбирают нас</h2>
-          <ul>
-            <li>
-              <strong>Аккуратная работа:</strong> внимательное отношение к каждой
-              вещи.
-            </li>
-            <li>
-              <strong>Мелкий и сложный ремонт:</strong> возьмёмся за любые
-              задачи, от простых до сложных.
-            </li>
-            <li>
-              <strong>Прозрачные услуги:</strong> понятный перечень работ без
-              навязанных опций.
-            </li>
-            <li>
-              <strong>Удобная связь:</strong> быстро уточним детали любым
-              удобным способом.
-            </li>
-          </ul>
-        </div>
-      </section>
+          <div class="section-heading">
+            <span class="eyebrow">Фото</span>
+            <h2>Что сюда можно добавить</h2>
+            <p>
+              Когда будут реальные фотографии, этот блок легко заменить без переделки сайта.
+            </p>
+          </div>
 
-      <!-- Блок галереи -->
-      <section id="gallery" class="gallery">
-        <div class="container">
-          <h2>Галерея</h2>
           <div class="gallery-grid">
-            <img src="images/placeholder1.png" alt="Рабочее место" />
-            <img src="images/placeholder2.png" alt="Пример ремонта" />
-            <img src="images/placeholder3.png" alt="Фурнитура" />
-            <img src="images/placeholder4.png" alt="Ателье" />
+            <article class="gallery-card">
+              <div class="gallery-placeholder">Фото 1</div>
+              <h3>Рабочее место</h3>
+              <p>Стол, швейная машинка и рабочая зона.</p>
+            </article>
+            <article class="gallery-card">
+              <div class="gallery-placeholder">Фото 2</div>
+              <h3>Примеры ремонта</h3>
+              <p>До и после, аккуратные швы и замена деталей.</p>
+            </article>
+            <article class="gallery-card">
+              <div class="gallery-placeholder">Фото 3</div>
+              <h3>Фурнитура и материалы</h3>
+              <p>Пуговицы, молнии, кнопки и другие расходники.</p>
+            </article>
+            <article class="gallery-card">
+              <div class="gallery-placeholder">Фото 4</div>
+              <h3>Вывеска или вход</h3>
+              <p>Чтобы человеку было проще узнать место снаружи.</p>
+            </article>
           </div>
         </div>
       </section>
 
-      <!-- Блок контактов -->
-      <section id="contact" class="contact">
-        <div class="container">
-          <h2>Контакты</h2>
-          <div class="contact-info">
+      <section id="contact" class="section contact">
+        <div class="container contact-wrap">
+          <div class="section-heading section-heading-left">
+            <span class="eyebrow">Контакты</span>
+            <h2>Как связаться</h2>
             <p>
-              <strong>Адрес:</strong> Проспект Ленина, 83, Орск
+              Этот блок уже можно использовать в реальном сайте. Нужно только
+              заменить заглушки на настоящий телефон, график и при желании добавить WhatsApp.
             </p>
-            <p>
-              <strong>Телефон:</strong> +7 (___) ___‑__‑__
-            </p>
-            <p>
-              <strong>График работы:</strong> Пн–Пт: 10:00–18:00<br />
-              Сб–Вс: по договорённости
-            </p>
-            <p>
-              <em
-                >В будущем здесь появятся ссылки на WhatsApp и Telegram.</em
-              >
-            </p>
+          </div>
+
+          <div class="contact-grid">
+            <article class="contact-card">
+              <span class="mini-label">Адрес</span>
+              <strong>Проспект Ленина, 83, Орск</strong>
+            </article>
+            <article class="contact-card">
+              <span class="mini-label">Телефон</span>
+              <strong>Добавить номер телефона</strong>
+            </article>
+            <article class="contact-card">
+              <span class="mini-label">График работы</span>
+              <strong>Добавить часы работы</strong>
+            </article>
+            <article class="contact-card accent-card">
+              <span class="mini-label">Связь</span>
+              <strong>Позже можно добавить WhatsApp и Telegram</strong>
+            </article>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- Подвал -->
-    <footer>
-      <div class="container">
-        © 2026 Ателье в Орске. Все права защищены.
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 Ателье в Орске</p>
+        <p>Сайт-визитка для ремонта и подгонки одежды</p>
       </div>
     </footer>
   </body>
