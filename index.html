@@ -8,7 +8,7 @@
       name="description"
       content="Ателье в Орске: пошив изделий на заказ, ремонт одежды, подгонка по фигуре, замена молний, установка фурнитуры, штопка джинсов и работа с домашним текстилем."
     />
-    <meta name="theme-color" content="#f4ede4" />
+    <meta name="theme-color" content="#f6efe6" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="ru_RU" />
     <meta
@@ -22,15 +22,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Prata&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Literata:opsz,wght@7..72,600;7..72,700&display=swap"
       rel="stylesheet"
     />
     <link
       rel="icon"
-      href="images/favicon.svg?v=20260325c"
+      href="images/favicon.svg?v=20260325d"
       type="image/svg+xml"
     />
-    <link rel="stylesheet" href="css/style.css?v=20260325c" />
+    <link rel="stylesheet" href="css/style.css?v=20260325d" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -55,13 +55,15 @@
           <span class="brand-title">Ателье</span>
           <span class="brand-subtitle">Пошив, ремонт и подгонка • Орск</span>
         </a>
+
         <nav class="site-nav" aria-label="Основная навигация">
           <a href="#services">Услуги</a>
-          <a href="#custom">Пошив</a>
-          <a href="#benefits">Почему мы</a>
+          <a href="#tailoring">Пошив</a>
+          <a href="#pricing">Цены</a>
           <a href="#faq">Вопросы</a>
           <a href="#contact">Контакты</a>
         </nav>
+
         <a href="tel:+79096066778" class="header-call">Позвонить</a>
       </div>
     </header>
@@ -70,55 +72,59 @@
       <section id="home" class="hero section">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <span class="eyebrow">Ателье в Орске</span>
-            <h1 class="hero-title">Пошив, ремонт и подгонка одежды</h1>
+            <p class="hero-location">Пошив, ремонт и подгонка одежды в Орске</p>
+            <h1>Пошив и ремонт одежды без лишних объяснений</h1>
             <p class="hero-text">
-              Шьём изделия на заказ, подгоняем вещи по фигуре, выполняем ремонт
-              одежды, замену молний и подкладки, установку фурнитуры, штопку
-              джинсов и работу с домашним текстилем.
+              Можно обратиться за пошивом нового изделия, ремонтом, подгонкой по
+              фигуре, заменой молний и подкладки, установкой фурнитуры, штопкой
+              джинсов и работой с домашним текстилем.
             </p>
+
             <div class="hero-actions">
               <a href="tel:+79096066778" class="btn btn-primary"
                 >Позвонить сейчас</a
               >
               <a href="#contact" class="btn btn-secondary">Адрес и контакты</a>
             </div>
-            <ul class="hero-highlights" aria-label="Быстрые преимущества">
-              <li>Можно обратиться и за ремонтом, и за новым пошивом</li>
-              <li>Аккуратная работа с посадкой, деталями и отделкой</li>
-              <li>Перед визитом достаточно коротко описать задачу по телефону</li>
-            </ul>
+
+            <div class="hero-notes" aria-label="Преимущества">
+              <span>Пошив и ремонт в одном месте</span>
+              <span>Аккуратная работа с посадкой и деталями</span>
+              <span>Перед визитом лучше коротко позвонить</span>
+            </div>
           </div>
 
-          <aside class="hero-panel" aria-label="Краткая информация">
-            <div class="panel-card">
-              <p class="panel-label">С чем можно обратиться</p>
-              <ul class="compact-list">
-                <li>Пошив изделий по индивидуальному заказу</li>
+          <aside class="hero-aside" aria-label="Краткая информация">
+            <article class="info-card info-card-dark">
+              <p class="card-kicker">С чем можно обратиться</p>
+              <ul class="feature-list">
+                <li>Пошив изделий на заказ</li>
                 <li>Подгонка одежды по фигуре</li>
                 <li>Замена молний, подкладки и фурнитуры</li>
                 <li>Штопка и восстановление джинсов</li>
                 <li>Шторы и домашний текстиль</li>
               </ul>
-            </div>
+            </article>
 
-            <div class="hero-mini-grid">
-              <article class="mini-card">
-                <span class="mini-label">Адрес</span>
-                <strong>Проспект Ленина, 83</strong>
-                <p>Орск</p>
-              </article>
-              <article class="mini-card phone-card">
-                <span class="mini-label">Телефон</span>
+            <div class="hero-summary-grid">
+              <article class="info-card">
+                <p class="card-kicker">Телефон</p>
                 <strong class="phone-value">+7 909 606-67-78</strong>
-                <p>Позвоните перед визитом</p>
+                <p class="card-note">Позвоните перед визитом</p>
               </article>
-              <article class="mini-card wide-card">
-                <span class="mini-label">Формат работы</span>
-                <strong>Пошив, ремонт и переделка</strong>
-                <p>
-                  Если нужна новая вещь или доработка уже готового изделия, это
-                  тоже можно обсудить.
+
+              <article class="info-card">
+                <p class="card-kicker">Адрес</p>
+                <strong>Проспект Ленина, 83</strong>
+                <p class="card-note">Орск</p>
+              </article>
+
+              <article class="info-card info-card-wide">
+                <p class="card-kicker">Что важно знать</p>
+                <strong>Стоимость зависит от задачи</strong>
+                <p class="card-note">
+                  Цена зависит от типа изделия, сложности, ткани, объёма
+                  переделки и времени на аккуратный результат.
                 </p>
               </article>
             </div>
@@ -129,12 +135,11 @@
       <section id="services" class="section services">
         <div class="container">
           <div class="section-heading">
-            <span class="eyebrow">Услуги</span>
-            <h2>Что можно заказать в ателье</h2>
+            <p class="section-label">Услуги</p>
+            <h2>Что можно заказать</h2>
             <p>
-              На странице собраны основные направления, чтобы человек сразу
-              понял, можно ли прийти сюда за пошивом, ремонтом или доработкой
-              готовой вещи.
+              Здесь собраны основные направления, чтобы человеку было сразу
+              понятно, подходит ли ему это ателье.
             </p>
           </div>
 
@@ -142,56 +147,55 @@
             <article class="service-item">
               <h3>Пошив изделий на заказ</h3>
               <p>
-                Индивидуальный пошив под задачу клиента, когда нужна новая вещь,
-                а не только ремонт готовой одежды.
+                Индивидуальный пошив, когда нужна новая вещь под конкретную
+                задачу и посадку.
               </p>
             </article>
             <article class="service-item">
               <h3>Подгонка по фигуре</h3>
               <p>
-                Аккуратная посадка одежды по талии, длине и другим важным
-                параметрам.
+                Посадка по талии, длине и другим параметрам без грубой
+                переделки.
               </p>
             </article>
             <article class="service-item">
               <h3>Укорачивание изделий</h3>
               <p>
-                Подшив брюк, юбок, платьев и других изделий с чистой обработкой
-                края.
+                Подшив брюк, юбок, платьев и других изделий с аккуратной
+                обработкой.
               </p>
             </article>
             <article class="service-item">
               <h3>Замена молний и подкладки</h3>
               <p>
-                Ремонт изношенных деталей, которые чаще всего требуют замены в
-                повседневной носке.
+                Замена деталей, которые чаще всего изнашиваются в повседневной
+                носке.
               </p>
             </article>
             <article class="service-item">
               <h3>Пуговицы, кнопки и клёпки</h3>
               <p>
-                Установка и замена фурнитуры для повседневной, верхней и
-                рабочей одежды.
+                Установка и замена фурнитуры для повседневной и верхней одежды.
               </p>
             </article>
             <article class="service-item">
-              <h3>Штопка и восстановление джинсов</h3>
+              <h3>Штопка джинсов</h3>
               <p>
-                Укрепление ткани и аккуратный ремонт мест износа без грубой
-                переделки.
+                Восстановление ткани и мест износа, где важна аккуратность, а
+                не просто быстрый ремонт.
               </p>
             </article>
             <article class="service-item">
               <h3>Кожаные и меховые изделия</h3>
               <p>
-                Деликатная доработка и реставрация вещей, где особенно важна
-                точность в работе.
+                Деликатная доработка и реставрация вещей, требующих точной
+                работы.
               </p>
             </article>
             <article class="service-item">
               <h3>Шторы и домашний текстиль</h3>
               <p>
-                Подгонка по длине, доработка и пошив текстильных изделий для
+                Пошив, подгонка по длине и доработка текстильных изделий для
                 дома.
               </p>
             </article>
@@ -199,92 +203,53 @@
         </div>
       </section>
 
-      <section id="custom" class="section craft">
-        <div class="container craft-grid">
-          <div class="craft-copy">
-            <span class="eyebrow">Пошив</span>
-            <h2>Когда нужен не ремонт, а новая вещь</h2>
+      <section id="tailoring" class="section detail-section">
+        <div class="container detail-grid">
+          <article class="detail-card">
+            <p class="section-label">Пошив</p>
+            <h2>Если нужна новая вещь, а не только ремонт</h2>
             <p>
-              Отдельно выделили пошив, чтобы не было ощущения, что ателье
-              занимается только ремонтом. Если нужна новая вещь, пошив по
-              меркам, доработка фасона или работа с текстилем, это тоже сюда.
+              На сайте это выделено отдельно, чтобы не было ощущения, что ателье
+              занимается только ремонтом. Можно обсудить пошив нового изделия,
+              переделку уже готовой вещи или работу с домашним текстилем.
             </p>
-            <p>
-              Проще всего позвонить и коротко описать задачу: что именно нужно
-              сшить, для какого изделия и есть ли пожелания по посадке, длине
-              или деталям.
-            </p>
-          </div>
+            <ul class="plain-list">
+              <li>Индивидуальный заказ под конкретную задачу</li>
+              <li>Переделка готового изделия по фасону и посадке</li>
+              <li>Работа с домашним текстилем и шторами</li>
+            </ul>
+          </article>
 
-          <div class="craft-list" aria-label="Направления пошива">
-            <article class="craft-item">
-              <strong>Индивидуальный заказ</strong>
-              <p>Когда нужна вещь с нуля под конкретную задачу и посадку.</p>
-            </article>
-            <article class="craft-item">
-              <strong>Переделка готового изделия</strong>
-              <p>Если вещь можно не просто починить, а заметно улучшить по крою.</p>
-            </article>
-            <article class="craft-item">
-              <strong>Домашний текстиль</strong>
-              <p>Шторы и другие текстильные изделия, где важны размеры и аккуратность.</p>
-            </article>
-            <article class="craft-item">
-              <strong>Пошив с уточнением деталей</strong>
-              <p>Длину, посадку, отделку и удобный формат заказа лучше согласовать заранее.</p>
-            </article>
-          </div>
+          <article id="pricing" class="detail-card detail-card-accent">
+            <p class="section-label section-label-light">Цены</p>
+            <h2>Почему стоимость может отличаться</h2>
+            <p>
+              Даже похожие заказы могут сильно различаться по объёму работы.
+              Цена зависит от типа изделия, ткани, сложности переделки,
+              фурнитуры и времени на аккуратный результат.
+            </p>
+            <ul class="plain-list plain-list-light">
+              <li>Подшив и полная переделка это разный объём работы</li>
+              <li>Тонкая, плотная и деликатная ткань требуют разного подхода</li>
+              <li>Стоимость называется после понимания конкретной задачи</li>
+            </ul>
+          </article>
         </div>
       </section>
 
-      <section id="benefits" class="section benefits">
-        <div class="container benefits-grid">
-          <div class="benefits-card">
-            <span class="eyebrow">Почему обращаются</span>
-            <h2>Спокойно, понятно и без лишней суеты</h2>
-            <div class="benefit-list">
-              <article class="benefit-item">
-                <strong>Не только ремонт</strong>
-                <p>
-                  Сайт сразу показывает, что здесь можно заказать и пошив, и
-                  доработку готовых вещей.
-                </p>
-              </article>
-              <article class="benefit-item">
-                <strong>Аккуратная работа с деталями</strong>
-                <p>
-                  Посадка, длина, фурнитура и отделка не выглядят второстепенно,
-                  а доводятся до результата.
-                </p>
-              </article>
-              <article class="benefit-item">
-                <strong>Понятный формат обращения</strong>
-                <p>
-                  Не нужно писать длинное сообщение: достаточно назвать тип
-                  изделия и нужную задачу.
-                </p>
-              </article>
-              <article class="benefit-item">
-                <strong>Удобно отправить одну ссылку</strong>
-                <p>
-                  На сайте уже есть услуги, телефон и адрес, поэтому клиент
-                  быстрее принимает решение о звонке.
-                </p>
-              </article>
-            </div>
-          </div>
-
-          <div class="steps-card">
-            <span class="eyebrow eyebrow-dark">Как проходит работа</span>
+      <section class="section workflow">
+        <div class="container workflow-grid">
+          <article class="workflow-card">
+            <p class="section-label">Как проходит работа</p>
             <h2>Простой путь для клиента</h2>
             <div class="steps-list">
               <article class="step-item">
                 <span>1</span>
                 <div>
-                  <strong>Описываете задачу</strong>
+                  <strong>Коротко описываете задачу</strong>
                   <p>
-                    Говорите, что нужно: пошив, ремонт, подгонка или доработка
-                    готового изделия.
+                    Что нужно сделать: пошив, ремонт, подгонка или переделка
+                    готовой вещи.
                   </p>
                 </div>
               </article>
@@ -293,62 +258,52 @@
                 <div>
                   <strong>Уточняете детали</strong>
                   <p>
-                    Тип вещи, желаемый результат и удобное время для визита или
-                    обсуждения заказа.
+                    Тип изделия, желаемый результат и удобное время для визита.
                   </p>
                 </div>
               </article>
               <article class="step-item">
                 <span>3</span>
                 <div>
-                  <strong>Получаете готовое изделие</strong>
+                  <strong>Получаете готовый результат</strong>
                   <p>
-                    Вещь после пошива, ремонта или подгонки с учётом оговорённых
-                    деталей.
+                    Вещь после пошива, ремонта или подгонки с учётом
+                    оговорённых деталей.
                   </p>
                 </div>
               </article>
             </div>
-          </div>
-        </div>
-      </section>
+          </article>
 
-      <section class="section prep">
-        <div class="container prep-card">
-          <div class="section-heading section-heading-left">
-            <span class="eyebrow">Перед обращением</span>
-            <h2>Что удобно сообщить заранее</h2>
-            <p>
-              Это упрощает первый разговор и помогает быстрее понять, идёт речь
-              о ремонте, подгонке или полноценном пошиве нового изделия.
-            </p>
-          </div>
-
-          <div class="prep-list">
-            <article class="prep-item">
-              <strong>Тип изделия</strong>
-              <p>Брюки, платье, куртка, джинсы, штора или другое изделие.</p>
-            </article>
-            <article class="prep-item">
-              <strong>Что нужно сделать</strong>
-              <p>Сшить, укоротить, заменить молнию, подогнать по фигуре или переделать фасон.</p>
-            </article>
-            <article class="prep-item">
-              <strong>Желаемый результат</strong>
-              <p>По длине, посадке, сроку или отдельным деталям, которые для вас важны.</p>
-            </article>
-          </div>
+          <article class="workflow-card workflow-card-soft">
+            <p class="section-label">Перед звонком</p>
+            <h2>Что лучше сказать заранее</h2>
+            <div class="prep-list">
+              <article class="prep-item">
+                <strong>Тип изделия</strong>
+                <p>Брюки, платье, куртка, джинсы, штора или другое изделие.</p>
+              </article>
+              <article class="prep-item">
+                <strong>Что нужно сделать</strong>
+                <p>Сшить, укоротить, заменить молнию, подогнать по фигуре или переделать фасон.</p>
+              </article>
+              <article class="prep-item">
+                <strong>Что важно для вас</strong>
+                <p>Посадка, длина, срок, ткань или отдельные детали, которые нужно учесть.</p>
+              </article>
+            </div>
+          </article>
         </div>
       </section>
 
       <section id="faq" class="section faq">
         <div class="container">
           <div class="section-heading">
-            <span class="eyebrow">Вопросы</span>
-            <h2>Что люди чаще всего уточняют</h2>
+            <p class="section-label">Вопросы</p>
+            <h2>Что чаще всего спрашивают</h2>
             <p>
-              Короткие ответы помогают сразу понять, можно ли обращаться именно
-              с вашей задачей.
+              Этот блок нужен для простых ответов на типовые вопросы без долгих
+              переписок.
             </p>
           </div>
 
@@ -356,15 +311,22 @@
             <details class="faq-item" open>
               <summary>Шьёте ли вы изделия на заказ?</summary>
               <p>
-                Да, на сайте это теперь выделено отдельно: можно обратиться не
-                только за ремонтом, но и за пошивом нового изделия.
+                Да, можно обратиться не только за ремонтом, но и за пошивом
+                нового изделия.
               </p>
             </details>
             <details class="faq-item">
               <summary>Можно ли принести вещь на переделку или подгонку?</summary>
               <p>
-                Да, если вещь нужно подогнать по фигуре, укоротить, заменить
-                детали или заметно доработать по посадке, это тоже сюда.
+                Да, если вещь нужно укоротить, подогнать по фигуре, заменить
+                детали или доработать по посадке.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Почему цена может отличаться?</summary>
+              <p>
+                Потому что стоимость зависит от изделия, ткани, сложности,
+                объёма работы и времени на аккуратный результат.
               </p>
             </details>
             <details class="faq-item">
@@ -374,58 +336,52 @@
                 пожелания по длине, посадке или сроку.
               </p>
             </details>
-            <details class="faq-item">
-              <summary>Можно ли заранее уточнить адрес и удобное время?</summary>
-              <p>
-                Да, перед визитом лучше коротко созвониться, чтобы спокойно
-                обсудить задачу и договориться по времени.
-              </p>
-            </details>
           </div>
         </div>
       </section>
 
       <section id="contact" class="section contact">
-        <div class="container contact-wrap">
-          <div class="section-heading section-heading-left">
-            <span class="eyebrow">Контакты</span>
+        <div class="container contact-box">
+          <div class="contact-copy">
+            <p class="section-label">Контакты</p>
             <h2>Как связаться</h2>
             <p>
-              Главная задача этого блока проста: человек должен быстро понять,
-              куда ехать и как связаться, если нужен пошив, ремонт или подгонка
-              одежды.
+              Сайт должен вести к простому действию: человек понимает, чем вы
+              занимаетесь, видит телефон и адрес, а потом звонит или едет по
+              адресу.
             </p>
+            <div class="contact-actions">
+              <a href="tel:+79096066778" class="btn btn-primary">Позвонить</a>
+              <a
+                href="https://yandex.ru/maps/?text=%D0%9E%D1%80%D1%81%D0%BA%2C%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0%2C%2083"
+                target="_blank"
+                rel="noreferrer"
+                class="btn btn-secondary"
+                >Открыть маршрут</a
+              >
+            </div>
           </div>
 
           <div class="contact-grid">
-            <a
-              class="contact-card contact-link"
-              href="https://yandex.ru/maps/?text=%D0%9E%D1%80%D1%81%D0%BA%2C%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0%2C%2083"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span class="mini-label">Адрес</span>
-              <strong>Проспект Ленина, 83, Орск</strong>
-              <span class="contact-note">Открыть маршрут</span>
-            </a>
-            <a class="contact-card contact-link phone-contact-card" href="tel:+79096066778">
-              <span class="mini-label">Телефон</span>
-              <strong class="phone-value">+7 909 606-67-78</strong>
-              <span class="contact-note">Нажмите, чтобы позвонить</span>
-            </a>
             <article class="contact-card">
-              <span class="mini-label">Перед визитом</span>
-              <strong>Лучше коротко позвонить заранее</strong>
-              <span class="contact-note">
-                Так проще уточнить задачу и договориться по удобному времени
-              </span>
+              <p class="card-kicker">Телефон</p>
+              <strong class="phone-value">+7 909 606-67-78</strong>
+              <p class="card-note">Нажмите, чтобы позвонить</p>
             </article>
-            <article class="contact-card accent-card">
-              <span class="mini-label">Можно обратиться</span>
-              <strong>За пошивом, ремонтом и переделкой</strong>
-              <span class="contact-note">
-                Если задача нестандартная, её тоже лучше обсудить по телефону
-              </span>
+            <article class="contact-card">
+              <p class="card-kicker">Адрес</p>
+              <strong>Проспект Ленина, 83, Орск</strong>
+              <p class="card-note">Маршрут можно открыть в Яндекс Картах</p>
+            </article>
+            <article class="contact-card">
+              <p class="card-kicker">Перед визитом</p>
+              <strong>Лучше коротко позвонить заранее</strong>
+              <p class="card-note">Так проще уточнить задачу и договориться по времени</p>
+            </article>
+            <article class="contact-card contact-card-dark">
+              <p class="card-kicker">С чем можно обратиться</p>
+              <strong>Пошив, ремонт и переделка</strong>
+              <p class="card-note">Если задача нестандартная, её тоже лучше обсудить по телефону</p>
             </article>
           </div>
         </div>
