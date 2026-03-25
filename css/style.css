@@ -190,6 +190,12 @@ h3 {
   color: var(--text);
 }
 
+.btn-vk {
+  background: rgba(230, 238, 248, 0.95);
+  border-color: rgba(80, 114, 158, 0.16);
+  color: #1f4f86;
+}
+
 .header-call:hover,
 .btn:hover {
   transform: translateY(-1px);
@@ -296,6 +302,7 @@ h3 {
 .hero-aside {
   display: grid;
   gap: 18px;
+  padding-top: 8px;
 }
 
 .info-card {
@@ -331,7 +338,7 @@ h3 {
 
 .hero-summary-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
   gap: 18px;
 }
 
@@ -349,10 +356,22 @@ h3 {
 }
 
 .phone-value {
-  font-size: clamp(23px, 2vw, 31px);
-  line-height: 1.1;
-  white-space: nowrap;
+  font-size: clamp(20px, 1.75vw, 26px);
+  line-height: 1.15;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
   font-variant-numeric: tabular-nums;
+}
+
+.info-card-phone .phone-value,
+.contact-card-phone .phone-value {
+  max-width: 13ch;
+}
+
+.info-card-address strong,
+.contact-card-address strong {
+  font-size: clamp(20px, 1.8vw, 28px);
 }
 
 .card-note {
@@ -685,7 +704,7 @@ h3 {
 }
 
 .contact-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
 }
 
 .contact-card {
@@ -728,6 +747,10 @@ h3 {
 
   .service-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-aside {
+    padding-top: 0;
   }
 
   .price-grid {
@@ -831,14 +854,16 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .example-heading {
+  .example-heading,
+  .contact-actions {
     align-items: flex-start;
     flex-direction: column;
   }
 
-  .phone-value {
-    white-space: normal;
-    overflow-wrap: anywhere;
+  .phone-value,
+  .info-card-phone .phone-value,
+  .contact-card-phone .phone-value {
+    max-width: none;
   }
 
   .footer-inner {
