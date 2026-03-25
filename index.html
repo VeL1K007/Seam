@@ -27,10 +27,10 @@
     />
     <link
       rel="icon"
-      href="images/favicon.svg?v=20260325h"
+      href="images/favicon.svg?v=20260326a"
       type="image/svg+xml"
     />
-    <link rel="stylesheet" href="css/style.css?v=20260325h" />
+    <link rel="stylesheet" href="css/style.css?v=20260326a" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -318,38 +318,70 @@
           </div>
 
           <div class="compare-grid">
-            <figure class="compare-card">
-              <div class="compare-media">
+            <figure class="compare-card compare-card-slider">
+              <div
+                class="before-after-slider"
+                data-before-after
+                style="--position: 54%;"
+              >
                 <img
-                  src="images/darning-before.jpg"
-                  alt="Джинсы до штопки, заметный износ ткани"
+                  class="slider-image slider-image-after"
+                  src="images/darning-after.jpg"
+                  alt="Джинсы после штопки, восстановленная ткань"
+                />
+                <div class="slider-before">
+                  <img
+                    class="slider-image slider-image-before"
+                    src="images/darning-before.jpg"
+                    alt="Джинсы до штопки, заметный износ ткани"
+                  />
+                </div>
+
+                <div class="slider-label slider-label-before">До</div>
+                <div class="slider-label slider-label-after">После</div>
+
+                <div class="slider-divider" aria-hidden="true">
+                  <span class="slider-handle"></span>
+                </div>
+
+                <input
+                  class="slider-range"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="54"
+                  aria-label="Сравнить фото до и после штопки"
                 />
               </div>
               <figcaption class="compare-caption">
-                <span class="compare-badge">До</span>
-                <strong>Износ ткани в зоне нагрузки</strong>
+                <strong>Водите ползунок влево и вправо</strong>
                 <p>
-                  На этом этапе видно, что быстрым ремонтом тут не обойтись.
+                  Так сразу видно разницу между износом ткани до работы и
+                  результатом после аккуратной штопки.
                 </p>
               </figcaption>
             </figure>
 
-            <figure class="compare-card">
-              <div class="compare-media">
-                <img
-                  src="images/darning-after.jpg"
-                  alt="Джинсы после штопки, восстановленная ткань"
-                />
+            <article class="compare-card compare-note-card">
+              <div class="compare-note-list">
+                <div class="compare-note-item">
+                  <span class="compare-badge">До</span>
+                  <strong>Износ ткани в зоне нагрузки</strong>
+                  <p>
+                    До работы здесь видно, что простым быстрым ремонтом
+                    проблему не решить.
+                  </p>
+                </div>
+                <div class="compare-note-item">
+                  <span class="compare-badge">После</span>
+                  <strong>Аккуратное восстановление ткани</strong>
+                  <p>
+                    После штопки участок выглядит цельнее и готов к дальнейшей
+                    носке.
+                  </p>
+                </div>
               </div>
-              <figcaption class="compare-caption">
-                <span class="compare-badge">После</span>
-                <strong>Аккуратное восстановление ткани</strong>
-                <p>
-                  После штопки участок выглядит цельнее и готов к дальнейшей
-                  носке.
-                </p>
-              </figcaption>
-            </figure>
+            </article>
           </div>
 
           <div class="example-heading example-heading-secondary">
@@ -614,5 +646,16 @@
         <p>Пошив, ремонт и подгонка одежды</p>
       </div>
     </footer>
+    <script>
+      document.querySelectorAll("[data-before-after]").forEach((slider) => {
+        const input = slider.querySelector(".slider-range");
+        const update = () => {
+          slider.style.setProperty("--position", input.value + "%");
+        };
+
+        input.addEventListener("input", update);
+        update();
+      });
+    </script>
   </body>
 </html>
