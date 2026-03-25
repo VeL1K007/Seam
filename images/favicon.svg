@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Ателье">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8f4f31" />
+      <stop offset="100%" stop-color="#5b311f" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="url(#bg)" />
+  <path
+    d="M18 43c4.3 3.7 9 5.5 14.2 5.5 8.8 0 14.7-4.6 14.7-11.1 0-5.4-3.8-8.7-11-9.8l-4.2-.7c-3.3-.5-4.9-1.7-4.9-3.6 0-2.3 2.3-3.8 5.8-3.8 3.5 0 6.8 1 10 2.9l2.3-5.4c-3.3-2-7.5-3.1-12.2-3.1-8.5 0-14.1 4.4-14.1 10.9 0 5.3 3.4 8.4 10.6 9.6l4.2.7c3.6.6 5.2 1.8 5.2 3.9 0 2.5-2.6 4-6.8 4-4.4 0-8.4-1.4-11.9-4.2z"
+    fill="#fff8f1"
+  />
+  <path d="M50 13l-8 17" stroke="#f2d6c1" stroke-linecap="round" stroke-width="3" />
+  <circle cx="50.5" cy="12.5" r="3.5" fill="#f2d6c1" />
+</svg>

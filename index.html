@@ -3,24 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ателье в Орске — ремонт одежды</title>
+    <title>Ателье в Орске — пошив, ремонт и подгонка одежды</title>
     <meta
       name="description"
-      content="Ателье в Орске: ремонт одежды, подгонка по фигуре, замена молний, установка пуговиц и штопка джинсов."
+      content="Ателье в Орске: пошив изделий на заказ, ремонт одежды, подгонка по фигуре, замена молний, установка фурнитуры, штопка джинсов и работа с домашним текстилем."
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta name="theme-color" content="#f4ede4" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta
+      property="og:title"
+      content="Ателье в Орске — пошив, ремонт и подгонка одежды"
+    />
+    <meta
+      property="og:description"
+      content="Пошив изделий, ремонт одежды, подгонка по фигуре и аккуратная работа с деталями. Проспект Ленина, 83, Орск."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Prata&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="images/favicon.svg?v=20260325"
+      type="image/svg+xml"
+    />
+    <link rel="stylesheet" href="css/style.css?v=20260325" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Ателье в Орске",
+        "description": "Пошив, ремонт и подгонка одежды в Орске.",
+        "telephone": "+7 909 606-67-78",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Проспект Ленина, 83",
+          "addressLocality": "Орск",
+          "addressCountry": "RU"
+        },
+        "areaServed": "Орск"
+      }
+    </script>
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a href="#home" class="brand">
+        <a href="#home" class="brand" aria-label="На главный экран">
           <span class="brand-title">Ателье</span>
-          <span class="brand-subtitle">Ремонт одежды • Орск</span>
+          <span class="brand-subtitle">Пошив, ремонт и подгонка • Орск</span>
         </a>
         <nav class="site-nav" aria-label="Основная навигация">
           <a href="#services">Услуги</a>
+          <a href="#custom">Пошив</a>
           <a href="#benefits">Почему мы</a>
-          <a href="#gallery">Фото</a>
           <a href="#faq">Вопросы</a>
           <a href="#contact">Контакты</a>
         </nav>
@@ -33,43 +71,56 @@
         <div class="container hero-grid">
           <div class="hero-copy">
             <span class="eyebrow">Ателье в Орске</span>
-            <h1>Ремонт и подгонка одежды</h1>
+            <h1>Пошив, ремонт и подгонка одежды</h1>
             <p class="hero-text">
-              Подгонка по фигуре, укорачивание изделий, замена молний,
-              установка пуговиц, кнопок и клёпок, штопка джинсов,
-              реставрация кожаных и меховых изделий, подгонка штор.
+              Шьём изделия на заказ, подгоняем вещи по фигуре, выполняем ремонт
+              одежды, замену молний и подкладки, установку фурнитуры, штопку
+              джинсов и работу с домашним текстилем.
             </p>
             <div class="hero-actions">
-              <a href="#contact" class="btn btn-primary">Связаться</a>
-              <a href="tel:+79096066778" class="btn btn-secondary">Позвонить сейчас</a>
+              <a href="tel:+79096066778" class="btn btn-primary"
+                >Позвонить сейчас</a
+              >
+              <a href="#contact" class="btn btn-secondary">Адрес и контакты</a>
             </div>
             <ul class="hero-highlights" aria-label="Быстрые преимущества">
-              <li>Один экран с ключевой информацией для клиента</li>
-              <li>Понятные услуги без лишнего текста</li>
-              <li>Быстрый переход к звонку и адресу</li>
+              <li>Можно обратиться и за ремонтом, и за новым пошивом</li>
+              <li>Аккуратная работа с посадкой, деталями и отделкой</li>
+              <li>Перед визитом достаточно коротко описать задачу по телефону</li>
             </ul>
           </div>
 
-          <aside class="hero-panel">
+          <aside class="hero-panel" aria-label="Краткая информация">
             <div class="panel-card">
-              <p class="panel-label">Основные услуги</p>
+              <p class="panel-label">С чем можно обратиться</p>
               <ul class="compact-list">
-                <li>Подгонка по фигуре</li>
-                <li>Замена подкладки и молний</li>
-                <li>Установка пуговиц, кнопок и клёпок</li>
-                <li>Штопка джинсов</li>
+                <li>Пошив изделий по индивидуальному заказу</li>
+                <li>Подгонка одежды по фигуре</li>
+                <li>Замена молний, подкладки и фурнитуры</li>
+                <li>Штопка и восстановление джинсов</li>
+                <li>Шторы и домашний текстиль</li>
               </ul>
             </div>
 
             <div class="hero-mini-grid">
-              <div class="mini-card">
+              <article class="mini-card">
                 <span class="mini-label">Адрес</span>
                 <strong>Проспект Ленина, 83</strong>
-              </div>
-              <div class="mini-card">
-                <span class="mini-label">Контакт</span>
+                <p>Орск</p>
+              </article>
+              <article class="mini-card">
+                <span class="mini-label">Телефон</span>
                 <strong>+7 909 606-67-78</strong>
-              </div>
+                <p>Лучше позвонить перед визитом</p>
+              </article>
+              <article class="mini-card wide-card">
+                <span class="mini-label">Формат работы</span>
+                <strong>Пошив, ремонт и переделка</strong>
+                <p>
+                  Если нужна новая вещь или доработка уже готового изделия, это
+                  тоже можно обсудить.
+                </p>
+              </article>
             </div>
           </aside>
         </div>
@@ -79,41 +130,108 @@
         <div class="container">
           <div class="section-heading">
             <span class="eyebrow">Услуги</span>
-            <h2>Что можно сделать в ателье</h2>
+            <h2>Что можно заказать в ателье</h2>
             <p>
-              Всё самое важное на одной странице — чтобы человек сразу понял,
-              подходит ли ему это ателье.
+              На странице собраны основные направления, чтобы человек сразу
+              понял, можно ли прийти сюда за пошивом, ремонтом или доработкой
+              готовой вещи.
             </p>
           </div>
 
           <div class="service-list">
             <article class="service-item">
+              <h3>Пошив изделий на заказ</h3>
+              <p>
+                Индивидуальный пошив под задачу клиента, когда нужна новая вещь,
+                а не только ремонт готовой одежды.
+              </p>
+            </article>
+            <article class="service-item">
               <h3>Подгонка по фигуре</h3>
-              <p>Аккуратная посадка одежды по фигуре без лишней переделки.</p>
+              <p>
+                Аккуратная посадка одежды по талии, длине и другим важным
+                параметрам.
+              </p>
             </article>
             <article class="service-item">
               <h3>Укорачивание изделий</h3>
-              <p>Подшив брюк, юбок, платьев и других изделий с чистым результатом.</p>
+              <p>
+                Подшив брюк, юбок, платьев и других изделий с чистой обработкой
+                края.
+              </p>
             </article>
             <article class="service-item">
-              <h3>Реставрация кожаных и меховых изделий</h3>
-              <p>Бережная доработка вещей, где особенно важна аккуратность.</p>
+              <h3>Замена молний и подкладки</h3>
+              <p>
+                Ремонт изношенных деталей, которые чаще всего требуют замены в
+                повседневной носке.
+              </p>
             </article>
             <article class="service-item">
-              <h3>Установка пуговиц, кнопок и клёпок</h3>
-              <p>Замена и установка фурнитуры для повседневной и верхней одежды.</p>
+              <h3>Пуговицы, кнопки и клёпки</h3>
+              <p>
+                Установка и замена фурнитуры для повседневной, верхней и
+                рабочей одежды.
+              </p>
             </article>
             <article class="service-item">
-              <h3>Замена подкладки и молний</h3>
-              <p>Ремонт деталей, которые чаще всего изнашиваются в носке.</p>
+              <h3>Штопка и восстановление джинсов</h3>
+              <p>
+                Укрепление ткани и аккуратный ремонт мест износа без грубой
+                переделки.
+              </p>
             </article>
             <article class="service-item">
-              <h3>Штопка джинсов</h3>
-              <p>Аккуратное восстановление ткани и швов в местах износа.</p>
+              <h3>Кожаные и меховые изделия</h3>
+              <p>
+                Деликатная доработка и реставрация вещей, где особенно важна
+                точность в работе.
+              </p>
             </article>
             <article class="service-item">
-              <h3>Подгонка штор</h3>
-              <p>Коррекция длины и обработка домашнего текстиля без лишней суеты.</p>
+              <h3>Шторы и домашний текстиль</h3>
+              <p>
+                Подгонка по длине, доработка и пошив текстильных изделий для
+                дома.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="custom" class="section craft">
+        <div class="container craft-grid">
+          <div class="craft-copy">
+            <span class="eyebrow">Пошив</span>
+            <h2>Когда нужен не ремонт, а новая вещь</h2>
+            <p>
+              Отдельно выделили пошив, чтобы не было ощущения, что ателье
+              занимается только ремонтом. Если нужна новая вещь, пошив по
+              меркам, доработка фасона или работа с текстилем, это тоже сюда.
+            </p>
+            <p>
+              Проще всего позвонить и коротко описать задачу: что именно нужно
+              сшить, для какого изделия и есть ли пожелания по посадке, длине
+              или деталям.
+            </p>
+          </div>
+
+          <div class="craft-list" aria-label="Направления пошива">
+            <article class="craft-item">
+              <strong>Индивидуальный заказ</strong>
+              <p>Когда нужна вещь с нуля под конкретную задачу и посадку.</p>
+            </article>
+            <article class="craft-item">
+              <strong>Переделка готового изделия</strong>
+              <p>Если вещь можно не просто починить, а заметно улучшить по крою.</p>
+            </article>
+            <article class="craft-item">
+              <strong>Домашний текстиль</strong>
+              <p>Шторы и другие текстильные изделия, где важны размеры и аккуратность.</p>
+            </article>
+            <article class="craft-item">
+              <strong>Пошив с уточнением деталей</strong>
+              <p>Длину, посадку, отделку и удобный формат заказа лучше согласовать заранее.</p>
             </article>
           </div>
         </div>
@@ -122,53 +240,74 @@
       <section id="benefits" class="section benefits">
         <div class="container benefits-grid">
           <div class="benefits-card">
-            <span class="eyebrow">Почему удобно</span>
-            <h2>Понятно, спокойно и по делу</h2>
+            <span class="eyebrow">Почему обращаются</span>
+            <h2>Спокойно, понятно и без лишней суеты</h2>
             <div class="benefit-list">
-              <div class="benefit-item">
-                <strong>Аккуратная работа</strong>
-                <p>Внимательное отношение к вещам и к деталям ремонта.</p>
-              </div>
-              <div class="benefit-item">
-                <strong>Мелкий и сложный ремонт</strong>
-                <p>От простой замены фурнитуры до более деликатной доработки.</p>
-              </div>
-              <div class="benefit-item">
-                <strong>Понятный список услуг</strong>
-                <p>Без перегруза и лишних обещаний — только то, что реально делается.</p>
-              </div>
-              <div class="benefit-item">
-                <strong>Удобно связаться</strong>
-                <p>Сайт можно использовать как одну ссылку со всей основной информацией.</p>
-              </div>
+              <article class="benefit-item">
+                <strong>Не только ремонт</strong>
+                <p>
+                  Сайт сразу показывает, что здесь можно заказать и пошив, и
+                  доработку готовых вещей.
+                </p>
+              </article>
+              <article class="benefit-item">
+                <strong>Аккуратная работа с деталями</strong>
+                <p>
+                  Посадка, длина, фурнитура и отделка не выглядят второстепенно,
+                  а доводятся до результата.
+                </p>
+              </article>
+              <article class="benefit-item">
+                <strong>Понятный формат обращения</strong>
+                <p>
+                  Не нужно писать длинное сообщение: достаточно назвать тип
+                  изделия и нужную задачу.
+                </p>
+              </article>
+              <article class="benefit-item">
+                <strong>Удобно отправить одну ссылку</strong>
+                <p>
+                  На сайте уже есть услуги, телефон и адрес, поэтому клиент
+                  быстрее принимает решение о звонке.
+                </p>
+              </article>
             </div>
           </div>
 
           <div class="steps-card">
-            <span class="eyebrow eyebrow-dark">Как это работает</span>
+            <span class="eyebrow eyebrow-dark">Как проходит работа</span>
             <h2>Простой путь для клиента</h2>
             <div class="steps-list">
-              <div class="step-item">
+              <article class="step-item">
                 <span>1</span>
                 <div>
-                  <strong>Смотрит услуги</strong>
-                  <p>Сразу понимает, можно ли здесь сделать нужную работу.</p>
+                  <strong>Описываете задачу</strong>
+                  <p>
+                    Говорите, что нужно: пошив, ремонт, подгонка или доработка
+                    готового изделия.
+                  </p>
                 </div>
-              </div>
-              <div class="step-item">
+              </article>
+              <article class="step-item">
                 <span>2</span>
                 <div>
-                  <strong>Связывается</strong>
-                  <p>Уточняет детали, адрес и удобное время.</p>
+                  <strong>Уточняете детали</strong>
+                  <p>
+                    Тип вещи, желаемый результат и удобное время для визита или
+                    обсуждения заказа.
+                  </p>
                 </div>
-              </div>
-              <div class="step-item">
+              </article>
+              <article class="step-item">
                 <span>3</span>
                 <div>
-                  <strong>Приходит в ателье</strong>
-                  <p>Без долгих объяснений и лишних переписок.</p>
+                  <strong>Получаете готовое изделие</strong>
+                  <p>
+                    Вещь после пошива, ремонта или подгонки с учётом оговорённых
+                    деталей.
+                  </p>
                 </div>
-              </div>
+              </article>
             </div>
           </div>
         </div>
@@ -177,61 +316,26 @@
       <section class="section prep">
         <div class="container prep-card">
           <div class="section-heading section-heading-left">
-            <span class="eyebrow">Перед визитом</span>
-            <h2>Что лучше подготовить заранее</h2>
+            <span class="eyebrow">Перед обращением</span>
+            <h2>Что удобно сообщить заранее</h2>
             <p>
-              Это небольшое дополнение снимает лишние вопросы и помогает клиенту
-              быстрее объяснить задачу по телефону или на месте.
+              Это упрощает первый разговор и помогает быстрее понять, идёт речь
+              о ремонте, подгонке или полноценном пошиве нового изделия.
             </p>
           </div>
 
           <div class="prep-list">
             <article class="prep-item">
+              <strong>Тип изделия</strong>
+              <p>Брюки, платье, куртка, джинсы, штора или другое изделие.</p>
+            </article>
+            <article class="prep-item">
               <strong>Что нужно сделать</strong>
-              <p>Например: укоротить, заменить молнию, подогнать по талии или восстановить шов.</p>
+              <p>Сшить, укоротить, заменить молнию, подогнать по фигуре или переделать фасон.</p>
             </article>
             <article class="prep-item">
-              <strong>Какой это тип вещи</strong>
-              <p>Брюки, пальто, платье, джинсы, штора или другое изделие.</p>
-            </article>
-            <article class="prep-item">
-              <strong>Когда удобно подойти</strong>
-              <p>Если человек заранее называет удобное время, договориться о визите проще.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="gallery" class="section gallery">
-        <div class="container">
-          <div class="section-heading">
-            <span class="eyebrow">Фото</span>
-            <h2>Что сюда можно добавить</h2>
-            <p>
-              Когда будут реальные фотографии, этот блок легко заменить без переделки сайта.
-            </p>
-          </div>
-
-          <div class="gallery-grid">
-            <article class="gallery-card">
-              <div class="gallery-placeholder">Фото 1</div>
-              <h3>Рабочее место</h3>
-              <p>Стол, швейная машинка и рабочая зона.</p>
-            </article>
-            <article class="gallery-card">
-              <div class="gallery-placeholder">Фото 2</div>
-              <h3>Примеры ремонта</h3>
-              <p>До и после, аккуратные швы и замена деталей.</p>
-            </article>
-            <article class="gallery-card">
-              <div class="gallery-placeholder">Фото 3</div>
-              <h3>Фурнитура и материалы</h3>
-              <p>Пуговицы, молнии, кнопки и другие расходники.</p>
-            </article>
-            <article class="gallery-card">
-              <div class="gallery-placeholder">Фото 4</div>
-              <h3>Вывеска или вход</h3>
-              <p>Чтобы человеку было проще узнать место снаружи.</p>
+              <strong>Желаемый результат</strong>
+              <p>По длине, посадке, сроку или отдельным деталям, которые для вас важны.</p>
             </article>
           </div>
         </div>
@@ -241,29 +345,40 @@
         <div class="container">
           <div class="section-heading">
             <span class="eyebrow">Вопросы</span>
-            <h2>Что стоит добавить ещё</h2>
+            <h2>Что люди чаще всего уточняют</h2>
             <p>
-              Ниже блок, который повышает доверие и помогает отвечать на типовые вопросы без звонка.
+              Короткие ответы помогают сразу понять, можно ли обращаться именно
+              с вашей задачей.
             </p>
           </div>
 
           <div class="faq-list">
             <details class="faq-item" open>
-              <summary>Что клиенту сказать при первом звонке?</summary>
+              <summary>Шьёте ли вы изделия на заказ?</summary>
               <p>
-                Достаточно назвать тип вещи, что именно нужно сделать и когда удобно подойти.
+                Да, на сайте это теперь выделено отдельно: можно обратиться не
+                только за ремонтом, но и за пошивом нового изделия.
               </p>
             </details>
             <details class="faq-item">
-              <summary>Какие блоки сильнее всего улучшают этот сайт?</summary>
+              <summary>Можно ли принести вещь на переделку или подгонку?</summary>
               <p>
-                Реальные фото работ, часы работы, карта или кнопка маршрута и короткие отзывы клиентов.
+                Да, если вещь нужно подогнать по фигуре, укоротить, заменить
+                детали или заметно доработать по посадке, это тоже сюда.
               </p>
             </details>
             <details class="faq-item">
-              <summary>Что ещё можно добавить позже?</summary>
+              <summary>Что лучше сказать при первом звонке?</summary>
               <p>
-                WhatsApp, Telegram, мини-прайс по частым услугам и фотографии входа в ателье.
+                Назовите тип изделия, что именно нужно сделать и есть ли важные
+                пожелания по длине, посадке или сроку.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Можно ли заранее уточнить адрес и удобное время?</summary>
+              <p>
+                Да, перед визитом лучше коротко созвониться, чтобы спокойно
+                обсудить задачу и договориться по времени.
               </p>
             </details>
           </div>
@@ -276,13 +391,19 @@
             <span class="eyebrow">Контакты</span>
             <h2>Как связаться</h2>
             <p>
-              Этот блок теперь можно использовать как реальную точку входа: позвонить,
-              открыть адрес на карте и быстро понять, какую информацию лучше подготовить заранее.
+              Главная задача этого блока проста: человек должен быстро понять,
+              куда ехать и как связаться, если нужен пошив, ремонт или подгонка
+              одежды.
             </p>
           </div>
 
           <div class="contact-grid">
-            <a class="contact-card contact-link" href="https://yandex.ru/maps/?text=%D0%9E%D1%80%D1%81%D0%BA%2C%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0%2C%2083" target="_blank" rel="noreferrer">
+            <a
+              class="contact-card contact-link"
+              href="https://yandex.ru/maps/?text=%D0%9E%D1%80%D1%81%D0%BA%2C%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%20%D0%9B%D0%B5%D0%BD%D0%B8%D0%BD%D0%B0%2C%2083"
+              target="_blank"
+              rel="noreferrer"
+            >
               <span class="mini-label">Адрес</span>
               <strong>Проспект Ленина, 83, Орск</strong>
               <span class="contact-note">Открыть маршрут</span>
@@ -293,14 +414,18 @@
               <span class="contact-note">Нажмите, чтобы позвонить</span>
             </a>
             <article class="contact-card">
-              <span class="mini-label">График работы</span>
-              <strong>Добавить точные часы работы</strong>
-              <span class="contact-note">Это один из самых важных следующих шагов</span>
+              <span class="mini-label">Перед визитом</span>
+              <strong>Лучше коротко позвонить заранее</strong>
+              <span class="contact-note">
+                Так проще уточнить задачу и договориться по удобному времени
+              </span>
             </article>
             <article class="contact-card accent-card">
-              <span class="mini-label">Что ещё добавить</span>
-              <strong>WhatsApp, отзывы и фото входа</strong>
-              <span class="contact-note">Эти элементы быстрее всего повышают доверие</span>
+              <span class="mini-label">Можно обратиться</span>
+              <strong>За пошивом, ремонтом и переделкой</strong>
+              <span class="contact-note">
+                Если задача нестандартная, её тоже лучше обсудить по телефону
+              </span>
             </article>
           </div>
         </div>
@@ -310,7 +435,7 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <p>© 2026 Ателье в Орске</p>
-        <p>Сайт-визитка для ремонта и подгонки одежды</p>
+        <p>Пошив, ремонт и подгонка одежды</p>
       </div>
     </footer>
   </body>
