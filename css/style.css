@@ -356,17 +356,21 @@ h3 {
 }
 
 .phone-value {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.22em;
   font-size: clamp(20px, 1.75vw, 26px);
   line-height: 1.15;
-  white-space: normal;
-  overflow-wrap: anywhere;
-  word-break: break-word;
   font-variant-numeric: tabular-nums;
+}
+
+.phone-value span {
+  white-space: nowrap;
 }
 
 .info-card-phone .phone-value,
 .contact-card-phone .phone-value {
-  max-width: 13ch;
+  max-width: 14ch;
 }
 
 .info-card-address strong,
