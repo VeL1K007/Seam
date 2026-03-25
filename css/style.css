@@ -381,14 +381,22 @@ h3 {
   gap: 18px;
 }
 
+.popular-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
 .service-item,
 .detail-card,
 .workflow-card,
-.contact-card {
+.contact-card,
+.popular-card {
   padding: 26px;
 }
 
-.service-item {
+.service-item,
+.popular-card {
   border-radius: var(--radius-lg);
 }
 
@@ -453,9 +461,23 @@ h3 {
 .step-item p,
 .prep-item p,
 .faq-item p,
-.contact-box p {
+.contact-box p,
+.popular-card p {
   margin-top: 12px;
   color: var(--muted);
+}
+
+.popular-card {
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-soft);
+  background: linear-gradient(180deg, rgba(255, 253, 249, 0.96), rgba(255, 250, 244, 0.88));
+}
+
+.popular-card strong {
+  display: block;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
 }
 
 .detail-card h2,
@@ -599,6 +621,10 @@ h3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .popular-grid {
+    grid-template-columns: 1fr;
+  }
+
   .compare-grid {
     grid-template-columns: 1fr;
   }
@@ -669,6 +695,7 @@ h3 {
 
   .hero-summary-grid,
   .service-list,
+  .popular-grid,
   .contact-grid {
     grid-template-columns: 1fr;
   }
