@@ -390,6 +390,22 @@ h3 {
   color: rgba(255, 242, 232, 0.78);
 }
 
+@media (min-width: 761px) {
+  .info-card-phone .phone-value,
+  .contact-card-phone .phone-value {
+    display: block;
+    max-width: none;
+    font-size: clamp(18px, 1.45vw, 22px);
+    line-height: 1.12;
+    white-space: nowrap;
+  }
+
+  .info-card-phone .phone-value span,
+  .contact-card-phone .phone-value span {
+    display: inline;
+  }
+}
+
 .section-heading {
   max-width: 720px;
   margin-bottom: 34px;
