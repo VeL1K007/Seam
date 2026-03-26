@@ -27,10 +27,10 @@
     />
     <link
       rel="icon"
-      href="images/favicon.svg?v=20260326a"
+      href="images/favicon.svg?v=20260326c"
       type="image/svg+xml"
     />
-    <link rel="stylesheet" href="css/style.css?v=20260326a" />
+    <link rel="stylesheet" href="css/style.css?v=20260326c" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -307,126 +307,266 @@
             </p>
           </div>
 
-          <div class="example-heading">
-            <div>
-              <h3>Штопка джинсов: до и после</h3>
-              <p>
-                Пример аккуратного восстановления ткани в зоне сильного износа.
-              </p>
-            </div>
-            <span class="example-price">от 400 до 800 ₽</span>
-          </div>
-
-          <div class="compare-grid">
-            <figure class="compare-card compare-card-slider">
-              <div
-                class="before-after-slider"
-                data-before-after
-                style="--position: 54%;"
+          <div class="works-showcase" data-work-tabs>
+            <div class="works-tabs" role="tablist" aria-label="Примеры работ">
+              <button
+                class="works-tab is-active"
+                type="button"
+                role="tab"
+                aria-selected="true"
+                aria-controls="work-panel-1"
+                id="work-tab-1"
+                data-work-tab="work-panel-1"
               >
-                <img
-                  class="slider-image slider-image-after"
-                  src="images/darning-after.jpg"
-                  alt="Джинсы после штопки, восстановленная ткань"
-                />
-                <div class="slider-before">
-                  <img
-                    class="slider-image slider-image-before"
-                    src="images/darning-before.jpg"
-                    alt="Джинсы до штопки, заметный износ ткани"
-                  />
-                </div>
-
-                <div class="slider-label slider-label-before">До</div>
-                <div class="slider-label slider-label-after">После</div>
-
-                <div class="slider-divider" aria-hidden="true">
-                  <span class="slider-handle"></span>
-                </div>
-
-                <input
-                  class="slider-range"
-                  type="range"
-                  min="0"
-                  max="100"
-                  value="54"
-                  aria-label="Сравнить фото до и после штопки"
-                />
-              </div>
-              <figcaption class="compare-caption">
-                <strong>Водите ползунок влево и вправо</strong>
-                <p>
-                  Так сразу видно разницу между износом ткани до работы и
-                  результатом после аккуратной штопки.
-                </p>
-              </figcaption>
-            </figure>
-
-            <article class="compare-card compare-note-card">
-              <div class="compare-note-list">
-                <div class="compare-note-item">
-                  <span class="compare-badge">До</span>
-                  <strong>Износ ткани в зоне нагрузки</strong>
-                  <p>
-                    До работы здесь видно, что простым быстрым ремонтом
-                    проблему не решить.
-                  </p>
-                </div>
-                <div class="compare-note-item">
-                  <span class="compare-badge">После</span>
-                  <strong>Аккуратное восстановление ткани</strong>
-                  <p>
-                    После штопки участок выглядит цельнее и готов к дальнейшей
-                    носке.
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="example-heading example-heading-secondary">
-            <div>
-              <h3>Пример работы: расшить изделие</h3>
-              <p>
-                Один из примеров, когда вещь нужно аккуратно расширить и
-                переделать по объёму.
-              </p>
+                Штопка 1
+              </button>
+              <button
+                class="works-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="work-panel-2"
+                id="work-tab-2"
+                data-work-tab="work-panel-2"
+              >
+                Штопка 2
+              </button>
+              <button
+                class="works-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-controls="work-panel-3"
+                id="work-tab-3"
+                data-work-tab="work-panel-3"
+              >
+                Расшить
+              </button>
             </div>
-            <span class="example-price">от 600 ₽</span>
-          </div>
 
-          <div class="photo-grid">
-            <figure class="photo-card">
-              <div class="photo-media">
-                <img
-                  src="images/alter-expand-1.jpg"
-                  alt="Пример работы по расшивке изделия, крупный план"
-                />
+            <section
+              class="work-panel is-active"
+              id="work-panel-1"
+              role="tabpanel"
+              aria-labelledby="work-tab-1"
+            >
+              <div class="example-heading">
+                <div>
+                  <h3>Штопка джинсов: пример 1</h3>
+                  <p>
+                    Пример аккуратного восстановления ткани в зоне сильного
+                    износа.
+                  </p>
+                </div>
+                <span class="example-price">от 400 до 800 ₽</span>
               </div>
-              <figcaption class="photo-caption">
-                <strong>Крупный план работы</strong>
-                <p>
-                  Такой пример показывает аккуратность швов и обработку после
-                  расшивки изделия.
-                </p>
-              </figcaption>
-            </figure>
 
-            <figure class="photo-card">
-              <div class="photo-media">
-                <img
-                  src="images/alter-expand-2.jpg"
-                  alt="Пример работы по расшивке изделия, общий вид"
-                />
+              <div class="compare-grid">
+                <figure class="compare-card compare-card-slider">
+                  <div
+                    class="before-after-slider"
+                    data-before-after
+                    style="--position: 54%;"
+                  >
+                    <img
+                      class="slider-image slider-image-after"
+                      src="images/darning-after.jpg"
+                      alt="Джинсы после штопки, восстановленная ткань"
+                    />
+                    <div class="slider-before">
+                      <img
+                        class="slider-image slider-image-before"
+                        src="images/darning-before.jpg"
+                        alt="Джинсы до штопки, заметный износ ткани"
+                      />
+                    </div>
+
+                    <div class="slider-label slider-label-before">До</div>
+                    <div class="slider-label slider-label-after">После</div>
+
+                    <div class="slider-divider" aria-hidden="true">
+                      <span class="slider-handle"></span>
+                    </div>
+
+                    <input
+                      class="slider-range"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="54"
+                      aria-label="Сравнить фото до и после штопки, пример 1"
+                    />
+                  </div>
+                  <figcaption class="compare-caption">
+                    <strong>Водите ползунок влево и вправо</strong>
+                    <p>
+                      Так сразу видно разницу между износом ткани до работы и
+                      результатом после аккуратной штопки.
+                    </p>
+                  </figcaption>
+                </figure>
+
+                <article class="compare-card compare-note-card">
+                  <div class="compare-note-list">
+                    <div class="compare-note-item">
+                      <span class="compare-badge">До</span>
+                      <strong>Износ ткани в зоне нагрузки</strong>
+                      <p>
+                        До работы здесь видно, что простым быстрым ремонтом
+                        проблему не решить.
+                      </p>
+                    </div>
+                    <div class="compare-note-item">
+                      <span class="compare-badge">После</span>
+                      <strong>Аккуратное восстановление ткани</strong>
+                      <p>
+                        После штопки участок выглядит цельнее и готов к
+                        дальнейшей носке.
+                      </p>
+                    </div>
+                  </div>
+                </article>
               </div>
-              <figcaption class="photo-caption">
-                <strong>Общий вид изделия</strong>
-                <p>
-                  По фото можно понять, как выглядит результат уже на самой
-                  вещи, а не только на шве.
-                </p>
-              </figcaption>
-            </figure>
+            </section>
+
+            <section
+              class="work-panel"
+              id="work-panel-2"
+              role="tabpanel"
+              aria-labelledby="work-tab-2"
+              hidden
+            >
+              <div class="example-heading">
+                <div>
+                  <h3>Штопка джинсов: пример 2</h3>
+                  <p>
+                    Ещё один пример, где хорошо видно разницу между повреждённым
+                    участком и итоговым результатом.
+                  </p>
+                </div>
+                <span class="example-price">от 400 до 800 ₽</span>
+              </div>
+
+              <div class="compare-grid">
+                <figure class="compare-card compare-card-slider">
+                  <div
+                    class="before-after-slider"
+                    data-before-after
+                    style="--position: 46%;"
+                  >
+                    <img
+                      class="slider-image slider-image-after"
+                      src="images/darning-after-2.jpg"
+                      alt="Джинсы после второй штопки, аккуратно восстановленная ткань"
+                    />
+                    <div class="slider-before">
+                      <img
+                        class="slider-image slider-image-before"
+                        src="images/darning-before-2.jpg"
+                        alt="Джинсы до второй штопки, видимый порез и износ ткани"
+                      />
+                    </div>
+
+                    <div class="slider-label slider-label-before">До</div>
+                    <div class="slider-label slider-label-after">После</div>
+
+                    <div class="slider-divider" aria-hidden="true">
+                      <span class="slider-handle"></span>
+                    </div>
+
+                    <input
+                      class="slider-range"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="46"
+                      aria-label="Сравнить фото до и после штопки, пример 2"
+                    />
+                  </div>
+                  <figcaption class="compare-caption">
+                    <strong>Ещё один пример аккуратной штопки</strong>
+                    <p>
+                      Здесь можно так же подвигать ползунок и посмотреть, как
+                      меняется вид ткани после работы.
+                    </p>
+                  </figcaption>
+                </figure>
+
+                <article class="compare-card compare-note-card">
+                  <div class="compare-note-list">
+                    <div class="compare-note-item">
+                      <span class="compare-badge">До</span>
+                      <strong>Повреждённый участок ткани</strong>
+                      <p>
+                        На фото до работы заметен разрыв, который портит вид
+                        вещи и со временем становится хуже.
+                      </p>
+                    </div>
+                    <div class="compare-note-item">
+                      <span class="compare-badge">После</span>
+                      <strong>Более аккуратный и спокойный вид</strong>
+                      <p>
+                        После штопки участок выглядит ровнее и не так бросается
+                        в глаза в носке.
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <section
+              class="work-panel"
+              id="work-panel-3"
+              role="tabpanel"
+              aria-labelledby="work-tab-3"
+              hidden
+            >
+              <div class="example-heading">
+                <div>
+                  <h3>Пример работы: расшить изделие</h3>
+                  <p>
+                    Один из примеров, когда вещь нужно аккуратно расширить и
+                    переделать по объёму.
+                  </p>
+                </div>
+                <span class="example-price">от 600 ₽</span>
+              </div>
+
+              <div class="photo-grid">
+                <figure class="photo-card">
+                  <div class="photo-media">
+                    <img
+                      src="images/alter-expand-1.jpg"
+                      alt="Пример работы по расшивке изделия, крупный план"
+                    />
+                  </div>
+                  <figcaption class="photo-caption">
+                    <strong>Крупный план работы</strong>
+                    <p>
+                      Такой пример показывает аккуратность швов и обработку
+                      после расшивки изделия.
+                    </p>
+                  </figcaption>
+                </figure>
+
+                <figure class="photo-card">
+                  <div class="photo-media">
+                    <img
+                      src="images/alter-expand-2.jpg"
+                      alt="Пример работы по расшивке изделия, общий вид"
+                    />
+                  </div>
+                  <figcaption class="photo-caption">
+                    <strong>Общий вид изделия</strong>
+                    <p>
+                      По фото можно понять, как выглядит результат уже на самой
+                      вещи, а не только на шве.
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+            </section>
           </div>
         </div>
       </section>
@@ -655,6 +795,31 @@
 
         input.addEventListener("input", update);
         update();
+      });
+
+      document.querySelectorAll("[data-work-tabs]").forEach((group) => {
+        const tabs = Array.from(group.querySelectorAll("[data-work-tab]"));
+        const panels = Array.from(group.querySelectorAll(".work-panel"));
+
+        const activate = (tab) => {
+          const targetId = tab.dataset.workTab;
+
+          tabs.forEach((item) => {
+            const isActive = item === tab;
+            item.classList.toggle("is-active", isActive);
+            item.setAttribute("aria-selected", String(isActive));
+          });
+
+          panels.forEach((panel) => {
+            const isActive = panel.id === targetId;
+            panel.classList.toggle("is-active", isActive);
+            panel.hidden = !isActive;
+          });
+        };
+
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", () => activate(tab));
+        });
       });
     </script>
   </body>
