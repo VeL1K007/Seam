@@ -409,19 +409,27 @@ h3 {
 }
 
 .section-heading {
+  position: relative;
   max-width: 720px;
   margin-bottom: 34px;
-  --section-ornament: url("../images/sewing-trim.svg");
 }
 
 .section-heading::after {
   content: "";
   display: block;
-  width: 240px;
-  height: 34px;
+  width: 148px;
+  height: 14px;
   margin-top: 18px;
-  background: var(--section-ornament) left center / contain no-repeat;
-  opacity: 0.95;
+  background:
+    radial-gradient(circle, rgba(141, 83, 50, 0.95) 0 1.4px, transparent 1.7px)
+      0 50% / 12px 12px no-repeat,
+    repeating-linear-gradient(
+        90deg,
+        rgba(141, 83, 50, 0.56) 0 4px,
+        transparent 4px 12px
+      )
+      18px 50% / calc(100% - 18px) 2px no-repeat;
+  opacity: 0.8;
 }
 
 .section-heading p {
@@ -429,44 +437,16 @@ h3 {
   color: var(--muted);
 }
 
-.services .section-heading {
-  --section-ornament: url("../images/sewing-measure.svg");
-}
-
-.popular-services .section-heading {
-  --section-ornament: url("../images/sewing-buttons-line.svg");
-}
-
-.prices-section .section-heading {
-  --section-ornament: url("../images/sewing-trim.svg");
-}
-
-.gallery-showcase .section-heading {
-  --section-ornament: url("../images/sewing-scissors-stitch.svg");
-}
-
-.faq .section-heading {
-  --section-ornament: url("../images/sewing-loop.svg");
-}
-
 .hero-copy::before,
 .hero-copy::after,
 .detail-card::before,
 .detail-card-accent::after,
-.contact-copy::after {
+.contact-copy::after,
+.info-card-dark::before,
+.contact-card-dark::before {
   content: "";
   position: absolute;
   pointer-events: none;
-}
-
-.hero-copy::before,
-.hero-copy::after,
-.detail-card::before,
-.detail-card-accent::after,
-.contact-copy::after {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .hero-copy > *,
@@ -478,46 +458,100 @@ h3 {
 }
 
 .hero-copy::before {
-  top: 18px;
-  right: 128px;
-  width: 142px;
-  height: 30px;
-  background-image: url("../images/sewing-measure.svg");
-  opacity: 0.68;
+  top: 24px;
+  right: 26px;
+  width: 176px;
+  height: 26px;
+  border-radius: 999px;
+  box-shadow: inset 0 0 0 1px rgba(141, 83, 50, 0.46);
+  background:
+    repeating-linear-gradient(
+        90deg,
+        transparent 0 16px,
+        rgba(141, 83, 50, 0.52) 16px 18px
+      )
+      14px 50% / calc(100% - 28px) 12px no-repeat,
+    linear-gradient(180deg, rgba(255, 250, 244, 0.94), rgba(242, 228, 214, 0.82));
+  opacity: 0.9;
 }
 
 .hero-copy::after {
-  top: 44px;
-  right: -8px;
-  width: 154px;
-  height: 104px;
-  background-image: url("../images/sewing-thread.svg");
-  opacity: 0.42;
+  right: -26px;
+  bottom: -34px;
+  width: 188px;
+  height: 148px;
+  border: 1px solid rgba(141, 83, 50, 0.16);
+  background:
+    repeating-linear-gradient(
+        90deg,
+        rgba(141, 83, 50, 0.07) 0 1px,
+        transparent 1px 20px
+      ),
+    repeating-linear-gradient(
+        0deg,
+        rgba(141, 83, 50, 0.07) 0 1px,
+        transparent 1px 20px
+      ),
+    linear-gradient(180deg, rgba(236, 221, 207, 0.28), rgba(255, 252, 248, 0.08));
+  clip-path: polygon(14% 8%, 100% 0, 86% 92%, 0 100%);
+  transform: rotate(-8deg);
+  opacity: 0.55;
 }
 
 .detail-card::before {
   top: 14px;
   right: 18px;
-  width: 112px;
-  height: 28px;
-  background-image: url("../images/sewing-buttons-line.svg");
-  opacity: 0.74;
+  width: 54px;
+  height: 54px;
+  background:
+    radial-gradient(circle, rgba(141, 83, 50, 0.88) 0 1.4px, transparent 1.8px)
+      15px 18px / 10px 10px no-repeat,
+    radial-gradient(circle, rgba(141, 83, 50, 0.88) 0 1.4px, transparent 1.8px)
+      29px 18px / 10px 10px no-repeat,
+    radial-gradient(circle, rgba(141, 83, 50, 0.88) 0 1.4px, transparent 1.8px)
+      15px 32px / 10px 10px no-repeat,
+    radial-gradient(circle, rgba(141, 83, 50, 0.88) 0 1.4px, transparent 1.8px)
+      29px 32px / 10px 10px no-repeat,
+    radial-gradient(circle, transparent 0 12px, rgba(141, 83, 50, 0.52) 12px 13.5px, transparent 13.5px)
+      center / 54px 54px no-repeat;
+  opacity: 0.34;
 }
 
 .detail-card:first-child::before {
-  background-image: url("../images/sewing-loop.svg");
-  width: 118px;
-  height: 34px;
+  width: 88px;
+  height: 20px;
+  background:
+    linear-gradient(rgba(141, 83, 50, 0.44), rgba(141, 83, 50, 0.44)) 0 50% /
+      100% 1px no-repeat,
+    repeating-linear-gradient(
+        90deg,
+        rgba(141, 83, 50, 0.66) 0 4px,
+        transparent 4px 11px
+      )
+      center / 100% 2px no-repeat;
+  opacity: 0.36;
 }
 
 .detail-card-accent::after {
-  right: -6px;
-  bottom: -2px;
-  width: 168px;
-  height: 112px;
-  background-image: url("../images/sewing-thread.svg");
-  opacity: 0.28;
-  transform: rotate(6deg);
+  right: -18px;
+  bottom: -28px;
+  width: 162px;
+  height: 122px;
+  border: 1px solid rgba(255, 245, 236, 0.18);
+  background:
+    repeating-linear-gradient(
+        90deg,
+        rgba(255, 245, 236, 0.08) 0 1px,
+        transparent 1px 18px
+      ),
+    repeating-linear-gradient(
+        0deg,
+        rgba(255, 245, 236, 0.08) 0 1px,
+        transparent 1px 18px
+      );
+  clip-path: polygon(10% 8%, 100% 0, 90% 92%, 0 100%);
+  transform: rotate(7deg);
+  opacity: 0.42;
 }
 
 .contact-copy {
@@ -525,12 +559,20 @@ h3 {
 }
 
 .contact-copy::after {
-  top: -8px;
-  right: -18px;
-  width: 154px;
-  height: 40px;
-  background-image: url("../images/sewing-scissors-stitch.svg");
-  opacity: 0.52;
+  top: 12px;
+  right: 6px;
+  width: 84px;
+  height: 18px;
+  background:
+    linear-gradient(rgba(141, 83, 50, 0.44), rgba(141, 83, 50, 0.44)) 0 50% /
+      100% 1px no-repeat,
+    repeating-linear-gradient(
+        90deg,
+        rgba(141, 83, 50, 0.64) 0 4px,
+        transparent 4px 11px
+      )
+      center / 100% 2px no-repeat;
+  opacity: 0.4;
 }
 
 .service-item,
@@ -552,57 +594,56 @@ h3 {
 .contact-card::before {
   content: "";
   position: absolute;
-  top: 12px;
-  right: 14px;
-  width: 82px;
-  height: 20px;
-  opacity: 0.8;
+  top: 16px;
+  right: 16px;
+  width: 52px;
+  height: 14px;
+  border-top: 1px solid rgba(141, 83, 50, 0.26);
+  border-right: 1px solid rgba(141, 83, 50, 0.26);
+  border-top-right-radius: 12px;
+  opacity: 0.9;
   pointer-events: none;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
-.service-item:nth-child(3n + 1)::before,
-.price-card:nth-child(3n + 1)::before,
-.popular-card:nth-child(3n + 1)::before,
-.workflow-card:nth-child(3n + 1)::before,
-.prep-item:nth-child(3n + 1)::before,
-.contact-card:nth-child(3n + 1)::before {
-  background-image: url("../images/sewing-buttons-line.svg");
-}
-
-.service-item:nth-child(3n + 2)::before,
-.price-card:nth-child(3n + 2)::before,
-.popular-card:nth-child(3n + 2)::before,
-.workflow-card:nth-child(3n + 2)::before,
-.prep-item:nth-child(3n + 2)::before,
-.contact-card:nth-child(3n + 2)::before {
-  background-image: url("../images/sewing-loop.svg");
-}
-
-.service-item:nth-child(3n)::before,
-.price-card:nth-child(3n)::before,
-.popular-card:nth-child(3n)::before,
-.workflow-card:nth-child(3n)::before,
-.prep-item:nth-child(3n)::before,
-.contact-card:nth-child(3n)::before {
-  background-image: url("../images/sewing-scissors-stitch.svg");
-}
-
-.workflow-card-soft::before,
-.contact-card-dark::before,
-.info-card-dark::before {
+.service-item::after,
+.price-card::after,
+.popular-card::after,
+.workflow-card::after,
+.prep-item::after,
+.contact-card::after {
   content: "";
   position: absolute;
-  left: 18px;
-  bottom: 14px;
-  width: 96px;
-  height: 22px;
-  opacity: 0.22;
+  top: 15px;
+  right: 15px;
+  width: 38px;
+  height: 2px;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(141, 83, 50, 0.52) 0 4px,
+    transparent 4px 10px
+  );
+  opacity: 0.68;
   pointer-events: none;
-  background: url("../images/sewing-buttons-line.svg") center / contain
-    no-repeat;
+}
+
+.info-card-dark::before,
+.contact-card-dark::before {
+  right: 18px;
+  bottom: 18px;
+  width: 48px;
+  height: 48px;
+  background:
+    radial-gradient(circle, rgba(255, 244, 235, 0.9) 0 1.3px, transparent 1.8px)
+      13px 15px / 10px 10px no-repeat,
+    radial-gradient(circle, rgba(255, 244, 235, 0.9) 0 1.3px, transparent 1.8px)
+      25px 15px / 10px 10px no-repeat,
+    radial-gradient(circle, rgba(255, 244, 235, 0.9) 0 1.3px, transparent 1.8px)
+      13px 27px / 10px 10px no-repeat,
+    radial-gradient(circle, rgba(255, 244, 235, 0.9) 0 1.3px, transparent 1.8px)
+      25px 27px / 10px 10px no-repeat,
+    radial-gradient(circle, transparent 0 10px, rgba(255, 244, 235, 0.32) 10px 11.4px, transparent 11.4px)
+      center / 48px 48px no-repeat;
+  opacity: 0.2;
 }
 
 .service-list {
@@ -1257,44 +1298,40 @@ h3 {
   }
 
   .section-heading::after {
-    width: 210px;
+    width: 128px;
     margin-top: 16px;
   }
 
   .hero-copy::before {
-    right: 84px;
-    width: 112px;
+    right: 18px;
+    width: 136px;
     height: 24px;
-    opacity: 0.54;
+    opacity: 0.82;
   }
 
   .hero-copy::after {
-    top: auto;
     right: -18px;
-    bottom: 8px;
-    width: 126px;
-    height: 86px;
-    opacity: 0.28;
+    bottom: -26px;
+    width: 142px;
+    height: 112px;
+    opacity: 0.42;
   }
 
   .detail-card-accent::after,
   .contact-copy::after {
-    width: 126px;
-    height: 86px;
-    opacity: 0.22;
+    opacity: 0.3;
   }
 
   .detail-card::before {
-    width: 90px;
-    height: 22px;
+    width: 44px;
+    height: 44px;
   }
 
   .contact-copy::after {
-    top: auto;
-    right: -10px;
-    bottom: -6px;
-    width: 126px;
-    height: 34px;
+    top: 10px;
+    right: 4px;
+    width: 70px;
+    height: 16px;
     opacity: 0.34;
   }
 
@@ -1304,10 +1341,21 @@ h3 {
   .workflow-card::before,
   .prep-item::before,
   .contact-card::before {
-    width: 68px;
-    height: 18px;
+    width: 40px;
+    height: 12px;
     top: 10px;
     right: 10px;
+  }
+
+  .service-item::after,
+  .price-card::after,
+  .popular-card::after,
+  .workflow-card::after,
+  .prep-item::after,
+  .contact-card::after {
+    top: 9px;
+    right: 9px;
+    width: 30px;
   }
 
   .hero-summary-grid,
