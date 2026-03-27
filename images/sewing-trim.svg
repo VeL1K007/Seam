@@ -5,8 +5,8 @@
   <circle cx="14" cy="20" r="1.5" fill="#8D5332"/>
   <circle cx="20" cy="20" r="1.5" fill="#8D5332"/>
   <path d="M34 17H166" stroke="#C39A7C" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="2 8"/>
-  <circle cx="178" cy="12" r="4.2" stroke="#8D5332" stroke-width="1.8"/>
-  <circle cx="178" cy="22" r="4.2" stroke="#8D5332" stroke-width="1.8"/>
-  <path d="M181 14.5L200 27M181 19.5L200 7" stroke="#8D5332" stroke-width="1.8" stroke-linecap="round"/>
-  <path d="M200 17C211 17 220 14 235 8" stroke="#C39A7C" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="2 7"/>
+  <path d="M176 11L195 20" stroke="#8D5332" stroke-width="1.7" stroke-linecap="round"/>
+  <path d="M174 23L196 13" stroke="#8D5332" stroke-width="1.7" stroke-linecap="round"/>
+  <ellipse cx="174" cy="23" rx="3.4" ry="2.4" transform="rotate(-24 174 23)" stroke="#8D5332" stroke-width="1.4"/>
+  <path d="M196 13C210 12 220 16 235 24" stroke="#C39A7C" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="2 7"/>
 </svg>

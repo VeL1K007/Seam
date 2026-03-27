@@ -411,6 +411,7 @@ h3 {
 .section-heading {
   max-width: 720px;
   margin-bottom: 34px;
+  --section-ornament: url("../images/sewing-trim.svg");
 }
 
 .section-heading::after {
@@ -419,7 +420,7 @@ h3 {
   width: 240px;
   height: 34px;
   margin-top: 18px;
-  background: url("../images/sewing-trim.svg") left center / contain no-repeat;
+  background: var(--section-ornament) left center / contain no-repeat;
   opacity: 0.95;
 }
 
@@ -428,28 +429,85 @@ h3 {
   color: var(--muted);
 }
 
+.services .section-heading {
+  --section-ornament: url("../images/sewing-measure.svg");
+}
+
+.popular-services .section-heading {
+  --section-ornament: url("../images/sewing-buttons-line.svg");
+}
+
+.prices-section .section-heading {
+  --section-ornament: url("../images/sewing-trim.svg");
+}
+
+.gallery-showcase .section-heading {
+  --section-ornament: url("../images/sewing-scissors-stitch.svg");
+}
+
+.faq .section-heading {
+  --section-ornament: url("../images/sewing-loop.svg");
+}
+
+.hero-copy::before,
 .hero-copy::after,
+.detail-card::before,
 .detail-card-accent::after,
 .contact-copy::after {
   content: "";
   position: absolute;
   pointer-events: none;
-  background: url("../images/sewing-thread.svg") center / contain no-repeat;
+}
+
+.hero-copy::before,
+.hero-copy::after,
+.detail-card::before,
+.detail-card-accent::after,
+.contact-copy::after {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .hero-copy > *,
+.detail-card > *,
 .detail-card-accent > *,
 .contact-copy > * {
   position: relative;
   z-index: 1;
 }
 
-.hero-copy::after {
+.hero-copy::before {
   top: 18px;
+  right: 128px;
+  width: 142px;
+  height: 30px;
+  background-image: url("../images/sewing-measure.svg");
+  opacity: 0.68;
+}
+
+.hero-copy::after {
+  top: 44px;
   right: -8px;
   width: 154px;
   height: 104px;
+  background-image: url("../images/sewing-thread.svg");
   opacity: 0.42;
+}
+
+.detail-card::before {
+  top: 14px;
+  right: 18px;
+  width: 112px;
+  height: 28px;
+  background-image: url("../images/sewing-buttons-line.svg");
+  opacity: 0.74;
+}
+
+.detail-card:first-child::before {
+  background-image: url("../images/sewing-loop.svg");
+  width: 118px;
+  height: 34px;
 }
 
 .detail-card-accent::after {
@@ -457,6 +515,7 @@ h3 {
   bottom: -2px;
   width: 168px;
   height: 112px;
+  background-image: url("../images/sewing-thread.svg");
   opacity: 0.28;
   transform: rotate(6deg);
 }
@@ -468,9 +527,82 @@ h3 {
 .contact-copy::after {
   top: -8px;
   right: -18px;
-  width: 146px;
-  height: 100px;
-  opacity: 0.34;
+  width: 154px;
+  height: 40px;
+  background-image: url("../images/sewing-scissors-stitch.svg");
+  opacity: 0.52;
+}
+
+.service-item,
+.price-card,
+.popular-card,
+.workflow-card,
+.prep-item,
+.faq-item,
+.contact-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.service-item::before,
+.price-card::before,
+.popular-card::before,
+.workflow-card::before,
+.prep-item::before,
+.contact-card::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  width: 82px;
+  height: 20px;
+  opacity: 0.8;
+  pointer-events: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.service-item:nth-child(3n + 1)::before,
+.price-card:nth-child(3n + 1)::before,
+.popular-card:nth-child(3n + 1)::before,
+.workflow-card:nth-child(3n + 1)::before,
+.prep-item:nth-child(3n + 1)::before,
+.contact-card:nth-child(3n + 1)::before {
+  background-image: url("../images/sewing-buttons-line.svg");
+}
+
+.service-item:nth-child(3n + 2)::before,
+.price-card:nth-child(3n + 2)::before,
+.popular-card:nth-child(3n + 2)::before,
+.workflow-card:nth-child(3n + 2)::before,
+.prep-item:nth-child(3n + 2)::before,
+.contact-card:nth-child(3n + 2)::before {
+  background-image: url("../images/sewing-loop.svg");
+}
+
+.service-item:nth-child(3n)::before,
+.price-card:nth-child(3n)::before,
+.popular-card:nth-child(3n)::before,
+.workflow-card:nth-child(3n)::before,
+.prep-item:nth-child(3n)::before,
+.contact-card:nth-child(3n)::before {
+  background-image: url("../images/sewing-scissors-stitch.svg");
+}
+
+.workflow-card-soft::before,
+.contact-card-dark::before,
+.info-card-dark::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  bottom: 14px;
+  width: 96px;
+  height: 22px;
+  opacity: 0.22;
+  pointer-events: none;
+  background: url("../images/sewing-buttons-line.svg") center / contain
+    no-repeat;
 }
 
 .service-list {
@@ -1129,6 +1261,13 @@ h3 {
     margin-top: 16px;
   }
 
+  .hero-copy::before {
+    right: 84px;
+    width: 112px;
+    height: 24px;
+    opacity: 0.54;
+  }
+
   .hero-copy::after {
     top: auto;
     right: -18px;
@@ -1145,10 +1284,30 @@ h3 {
     opacity: 0.22;
   }
 
+  .detail-card::before {
+    width: 90px;
+    height: 22px;
+  }
+
   .contact-copy::after {
     top: auto;
     right: -10px;
     bottom: -6px;
+    width: 126px;
+    height: 34px;
+    opacity: 0.34;
+  }
+
+  .service-item::before,
+  .price-card::before,
+  .popular-card::before,
+  .workflow-card::before,
+  .prep-item::before,
+  .contact-card::before {
+    width: 68px;
+    height: 18px;
+    top: 10px;
+    right: 10px;
   }
 
   .hero-summary-grid,
