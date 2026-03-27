@@ -1386,7 +1386,7 @@ h3 {
 
   .header-inner {
     min-height: auto;
-    padding: 16px 0 18px;
+    padding: 14px 0 16px;
     align-items: flex-start;
     flex-direction: column;
   }
@@ -1407,33 +1407,34 @@ h3 {
     order: 3;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
   }
 
   .site-nav a {
     justify-content: center;
-    min-height: 46px;
-    padding: 10px 12px;
-    border-radius: 16px;
+    min-height: 42px;
+    padding: 8px 10px;
+    border-radius: 14px;
     border: 1px solid var(--line);
     background: rgba(255, 252, 248, 0.86);
     text-align: center;
+    font-size: 14px;
   }
 
   .header-call {
     order: 2;
     width: 100%;
-    min-height: 50px;
+    min-height: 48px;
   }
 
   .hero {
-    padding-top: 24px;
+    padding-top: 20px;
   }
 
   .hero::before {
     inset: 0 0 auto;
-    height: 540px;
+    height: 500px;
   }
 
   .hero-copy,
@@ -1447,8 +1448,21 @@ h3 {
     padding: 22px;
   }
 
+  h1 {
+    font-size: clamp(30px, 12vw, 48px);
+    line-height: 0.98;
+  }
+
+  .hero-copy h1 {
+    max-width: 8.5ch;
+  }
+
+  .hero-grid {
+    gap: 14px;
+  }
+
   .hero-text {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .hero-copy::after {
@@ -1457,6 +1471,16 @@ h3 {
     width: 120px;
     height: 96px;
     opacity: 0.36;
+  }
+
+  .hero-notes {
+    gap: 8px;
+    margin-top: 22px;
+  }
+
+  .hero-notes span {
+    padding: 8px 12px;
+    font-size: 13px;
   }
 
   .hero-summary-grid,
@@ -1468,11 +1492,12 @@ h3 {
   }
 
   .gallery-showcase {
-    padding-top: 64px;
+    padding-top: 52px;
   }
 
   .works-showcase {
-    padding: 18px;
+    gap: 16px;
+    padding: 14px;
   }
 
   .popular-services .container {
@@ -1503,7 +1528,61 @@ h3 {
 
   .works-tabs {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .works-tab {
+    min-height: 42px;
+    padding: 0 8px;
+    font-size: 14px;
+  }
+
+  .example-heading {
+    gap: 10px;
+  }
+
+  .example-heading h3 {
+    font-size: 22px;
+  }
+
+  .example-heading p {
+    margin-top: 6px;
+  }
+
+  .example-price {
+    padding: 7px 10px;
+    font-size: 11px;
+  }
+
+  .compare-grid {
+    gap: 14px;
+  }
+
+  .before-after-slider,
+  .compare-media,
+  .photo-media {
+    aspect-ratio: 1 / 1;
+  }
+
+  .compare-caption,
+  .photo-caption,
+  .compare-note-card {
+    padding: 18px;
+  }
+
+  .compare-note-list {
+    gap: 12px;
+  }
+
+  .compare-note-item {
+    padding: 16px;
+  }
+
+  .compare-note-item strong,
+  .compare-caption strong,
+  .photo-caption strong {
+    font-size: 20px;
   }
 
   .slider-handle {
