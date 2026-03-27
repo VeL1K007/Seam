@@ -417,19 +417,19 @@ h3 {
 .section-heading::after {
   content: "";
   display: block;
-  width: 148px;
-  height: 14px;
+  width: 96px;
+  height: 8px;
   margin-top: 18px;
   background:
-    radial-gradient(circle, rgba(141, 83, 50, 0.95) 0 1.4px, transparent 1.7px)
-      0 50% / 12px 12px no-repeat,
+    radial-gradient(circle, rgba(141, 83, 50, 0.9) 0 1.25px, transparent 1.55px)
+      0 50% / 10px 10px no-repeat,
     repeating-linear-gradient(
         90deg,
-        rgba(141, 83, 50, 0.56) 0 4px,
-        transparent 4px 12px
+        rgba(141, 83, 50, 0.5) 0 3px,
+        transparent 3px 9px
       )
-      18px 50% / calc(100% - 18px) 2px no-repeat;
-  opacity: 0.8;
+      14px 50% / calc(100% - 14px) 1px no-repeat;
+  opacity: 0.72;
 }
 
 .section-heading p {
@@ -437,213 +437,38 @@ h3 {
   color: var(--muted);
 }
 
-.hero-copy::before,
-.hero-copy::after,
-.detail-card::before,
-.detail-card-accent::after,
-.contact-copy::after,
-.info-card-dark::before,
-.contact-card-dark::before {
+.hero-copy::after {
   content: "";
   position: absolute;
   pointer-events: none;
 }
 
-.hero-copy > *,
-.detail-card > *,
-.detail-card-accent > *,
-.contact-copy > * {
+.hero-copy > * {
   position: relative;
   z-index: 1;
 }
 
-.hero-copy::before {
-  top: 24px;
-  right: 26px;
-  width: 176px;
-  height: 26px;
-  border-radius: 999px;
-  box-shadow: inset 0 0 0 1px rgba(141, 83, 50, 0.46);
-  background:
-    repeating-linear-gradient(
-        90deg,
-        transparent 0 16px,
-        rgba(141, 83, 50, 0.52) 16px 18px
-      )
-      14px 50% / calc(100% - 28px) 12px no-repeat,
-    linear-gradient(180deg, rgba(255, 250, 244, 0.94), rgba(242, 228, 214, 0.82));
-  opacity: 0.9;
-}
-
 .hero-copy::after {
-  right: -26px;
-  bottom: -34px;
-  width: 188px;
-  height: 148px;
+  right: -18px;
+  bottom: -22px;
+  width: 212px;
+  height: 164px;
   border: 1px solid rgba(141, 83, 50, 0.16);
   background:
     repeating-linear-gradient(
         90deg,
         rgba(141, 83, 50, 0.07) 0 1px,
-        transparent 1px 20px
+        transparent 1px 22px
       ),
     repeating-linear-gradient(
         0deg,
         rgba(141, 83, 50, 0.07) 0 1px,
-        transparent 1px 20px
+        transparent 1px 22px
       ),
     linear-gradient(180deg, rgba(236, 221, 207, 0.28), rgba(255, 252, 248, 0.08));
-  clip-path: polygon(14% 8%, 100% 0, 86% 92%, 0 100%);
-  transform: rotate(-8deg);
-  opacity: 0.55;
-}
-
-.detail-card::before {
-  top: 14px;
-  right: 18px;
-  width: 54px;
-  height: 54px;
-  background:
-    radial-gradient(circle, rgba(141, 83, 50, 0.88) 0 1.4px, transparent 1.8px)
-      15px 18px / 10px 10px no-repeat,
-    radial-gradient(circle, rgba(141, 83, 50, 0.88) 0 1.4px, transparent 1.8px)
-      29px 18px / 10px 10px no-repeat,
-    radial-gradient(circle, rgba(141, 83, 50, 0.88) 0 1.4px, transparent 1.8px)
-      15px 32px / 10px 10px no-repeat,
-    radial-gradient(circle, rgba(141, 83, 50, 0.88) 0 1.4px, transparent 1.8px)
-      29px 32px / 10px 10px no-repeat,
-    radial-gradient(circle, transparent 0 12px, rgba(141, 83, 50, 0.52) 12px 13.5px, transparent 13.5px)
-      center / 54px 54px no-repeat;
-  opacity: 0.34;
-}
-
-.detail-card:first-child::before {
-  width: 88px;
-  height: 20px;
-  background:
-    linear-gradient(rgba(141, 83, 50, 0.44), rgba(141, 83, 50, 0.44)) 0 50% /
-      100% 1px no-repeat,
-    repeating-linear-gradient(
-        90deg,
-        rgba(141, 83, 50, 0.66) 0 4px,
-        transparent 4px 11px
-      )
-      center / 100% 2px no-repeat;
-  opacity: 0.36;
-}
-
-.detail-card-accent::after {
-  right: -18px;
-  bottom: -28px;
-  width: 162px;
-  height: 122px;
-  border: 1px solid rgba(255, 245, 236, 0.18);
-  background:
-    repeating-linear-gradient(
-        90deg,
-        rgba(255, 245, 236, 0.08) 0 1px,
-        transparent 1px 18px
-      ),
-    repeating-linear-gradient(
-        0deg,
-        rgba(255, 245, 236, 0.08) 0 1px,
-        transparent 1px 18px
-      );
-  clip-path: polygon(10% 8%, 100% 0, 90% 92%, 0 100%);
-  transform: rotate(7deg);
-  opacity: 0.42;
-}
-
-.contact-copy {
-  position: relative;
-}
-
-.contact-copy::after {
-  top: 12px;
-  right: 6px;
-  width: 84px;
-  height: 18px;
-  background:
-    linear-gradient(rgba(141, 83, 50, 0.44), rgba(141, 83, 50, 0.44)) 0 50% /
-      100% 1px no-repeat,
-    repeating-linear-gradient(
-        90deg,
-        rgba(141, 83, 50, 0.64) 0 4px,
-        transparent 4px 11px
-      )
-      center / 100% 2px no-repeat;
-  opacity: 0.4;
-}
-
-.service-item,
-.price-card,
-.popular-card,
-.workflow-card,
-.prep-item,
-.faq-item,
-.contact-card {
-  position: relative;
-  overflow: hidden;
-}
-
-.service-item::before,
-.price-card::before,
-.popular-card::before,
-.workflow-card::before,
-.prep-item::before,
-.contact-card::before {
-  content: "";
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  width: 52px;
-  height: 14px;
-  border-top: 1px solid rgba(141, 83, 50, 0.26);
-  border-right: 1px solid rgba(141, 83, 50, 0.26);
-  border-top-right-radius: 12px;
-  opacity: 0.9;
-  pointer-events: none;
-}
-
-.service-item::after,
-.price-card::after,
-.popular-card::after,
-.workflow-card::after,
-.prep-item::after,
-.contact-card::after {
-  content: "";
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  width: 38px;
-  height: 2px;
-  background: repeating-linear-gradient(
-    90deg,
-    rgba(141, 83, 50, 0.52) 0 4px,
-    transparent 4px 10px
-  );
-  opacity: 0.68;
-  pointer-events: none;
-}
-
-.info-card-dark::before,
-.contact-card-dark::before {
-  right: 18px;
-  bottom: 18px;
-  width: 48px;
-  height: 48px;
-  background:
-    radial-gradient(circle, rgba(255, 244, 235, 0.9) 0 1.3px, transparent 1.8px)
-      13px 15px / 10px 10px no-repeat,
-    radial-gradient(circle, rgba(255, 244, 235, 0.9) 0 1.3px, transparent 1.8px)
-      25px 15px / 10px 10px no-repeat,
-    radial-gradient(circle, rgba(255, 244, 235, 0.9) 0 1.3px, transparent 1.8px)
-      13px 27px / 10px 10px no-repeat,
-    radial-gradient(circle, rgba(255, 244, 235, 0.9) 0 1.3px, transparent 1.8px)
-      25px 27px / 10px 10px no-repeat,
-    radial-gradient(circle, transparent 0 10px, rgba(255, 244, 235, 0.32) 10px 11.4px, transparent 11.4px)
-      center / 48px 48px no-repeat;
-  opacity: 0.2;
+  clip-path: polygon(18% 8%, 100% 0, 84% 92%, 0 100%);
+  transform: rotate(-7deg);
+  opacity: 0.48;
 }
 
 .service-list {
@@ -1298,64 +1123,16 @@ h3 {
   }
 
   .section-heading::after {
-    width: 128px;
+    width: 84px;
     margin-top: 16px;
   }
 
-  .hero-copy::before {
-    right: 18px;
-    width: 136px;
-    height: 24px;
-    opacity: 0.82;
-  }
-
   .hero-copy::after {
-    right: -18px;
-    bottom: -26px;
-    width: 142px;
-    height: 112px;
-    opacity: 0.42;
-  }
-
-  .detail-card-accent::after,
-  .contact-copy::after {
-    opacity: 0.3;
-  }
-
-  .detail-card::before {
-    width: 44px;
-    height: 44px;
-  }
-
-  .contact-copy::after {
-    top: 10px;
-    right: 4px;
-    width: 70px;
-    height: 16px;
-    opacity: 0.34;
-  }
-
-  .service-item::before,
-  .price-card::before,
-  .popular-card::before,
-  .workflow-card::before,
-  .prep-item::before,
-  .contact-card::before {
-    width: 40px;
-    height: 12px;
-    top: 10px;
-    right: 10px;
-  }
-
-  .service-item::after,
-  .price-card::after,
-  .popular-card::after,
-  .workflow-card::after,
-  .prep-item::after,
-  .contact-card::after {
-    top: 9px;
-    right: 9px;
-    width: 30px;
+    right: -10px;
+    bottom: -18px;
+    width: 120px;
+    height: 96px;
+    opacity: 0.36;
   }
 
   .hero-summary-grid,
