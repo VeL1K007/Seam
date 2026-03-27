@@ -241,6 +241,8 @@ h3 {
 .workflow-card,
 .contact-box,
 .detail-card {
+  position: relative;
+  overflow: hidden;
   border-radius: var(--radius-xl);
 }
 
@@ -411,9 +413,64 @@ h3 {
   margin-bottom: 34px;
 }
 
+.section-heading::after {
+  content: "";
+  display: block;
+  width: 240px;
+  height: 34px;
+  margin-top: 18px;
+  background: url("../images/sewing-trim.svg") left center / contain no-repeat;
+  opacity: 0.95;
+}
+
 .section-heading p {
   margin-top: 14px;
   color: var(--muted);
+}
+
+.hero-copy::after,
+.detail-card-accent::after,
+.contact-copy::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  background: url("../images/sewing-thread.svg") center / contain no-repeat;
+}
+
+.hero-copy > *,
+.detail-card-accent > *,
+.contact-copy > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-copy::after {
+  top: 18px;
+  right: -8px;
+  width: 154px;
+  height: 104px;
+  opacity: 0.42;
+}
+
+.detail-card-accent::after {
+  right: -6px;
+  bottom: -2px;
+  width: 168px;
+  height: 112px;
+  opacity: 0.28;
+  transform: rotate(6deg);
+}
+
+.contact-copy {
+  position: relative;
+}
+
+.contact-copy::after {
+  top: -8px;
+  right: -18px;
+  width: 146px;
+  height: 100px;
+  opacity: 0.34;
 }
 
 .service-list {
@@ -1065,6 +1122,33 @@ h3 {
 
   .hero-text {
     font-size: 18px;
+  }
+
+  .section-heading::after {
+    width: 210px;
+    margin-top: 16px;
+  }
+
+  .hero-copy::after {
+    top: auto;
+    right: -18px;
+    bottom: 8px;
+    width: 126px;
+    height: 86px;
+    opacity: 0.28;
+  }
+
+  .detail-card-accent::after,
+  .contact-copy::after {
+    width: 126px;
+    height: 86px;
+    opacity: 0.22;
+  }
+
+  .contact-copy::after {
+    top: auto;
+    right: -10px;
+    bottom: -6px;
   }
 
   .hero-summary-grid,
