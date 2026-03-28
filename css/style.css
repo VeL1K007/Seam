@@ -69,7 +69,7 @@ summary {
 
 .section {
   position: relative;
-  padding: 76px 0;
+  padding: 72px 0;
 }
 
 .section[id] {
@@ -206,6 +206,7 @@ h3 {
 .hero {
   position: relative;
   padding-top: 42px;
+  padding-bottom: 68px;
 }
 
 .hero::before {
@@ -469,8 +470,22 @@ h3 {
   margin-bottom: 30px;
 }
 
+.section-heading::after,
+.contact-copy::after,
+.final-cta-copy::after {
+  content: "";
+  width: 92px;
+  height: 1px;
+  margin-top: 8px;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(141, 83, 50, 0.56) 0 8px,
+    transparent 8px 15px
+  );
+}
+
 .section-heading h2 {
-  max-width: 12ch;
+  max-width: 14ch;
 }
 
 .section-heading p {
@@ -543,14 +558,15 @@ h3 {
 }
 
 .services {
-  padding-top: 52px;
+  padding-top: 60px;
+  padding-bottom: 46px;
 }
 
 .services .container,
 .prices-section .container {
   display: grid;
-  grid-template-columns: minmax(260px, 0.72fr) minmax(0, 1.28fr);
-  gap: 38px;
+  grid-template-columns: minmax(290px, 0.8fr) minmax(0, 1.2fr);
+  gap: 30px;
   align-items: start;
 }
 
@@ -558,7 +574,16 @@ h3 {
 .prices-section .section-heading {
   position: sticky;
   top: 118px;
-  padding-top: 10px;
+  margin-bottom: 0;
+  padding: 28px 26px 24px;
+  border: 1px solid rgba(59, 41, 31, 0.1);
+  border-radius: 28px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 253, 249, 0.94),
+    rgba(253, 245, 236, 0.74)
+  );
+  box-shadow: var(--shadow-soft);
 }
 
 .service-item {
@@ -594,7 +619,7 @@ h3 {
 .popular-services .container {
   position: relative;
   overflow: hidden;
-  padding: 42px;
+  padding: 40px;
   border-radius: 34px;
   background: linear-gradient(160deg, #31251e 0%, #1d1714 100%);
   box-shadow: var(--shadow-strong);
@@ -609,6 +634,14 @@ h3 {
 .popular-services .section-heading {
   max-width: 560px;
   margin-bottom: 26px;
+}
+
+.popular-services .section-heading::after {
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(255, 244, 235, 0.64) 0 8px,
+    transparent 8px 15px
+  );
 }
 
 .popular-services .section-label {
@@ -643,7 +676,8 @@ h3 {
 }
 
 .prices-section {
-  padding-top: 66px;
+  padding-top: 56px;
+  padding-bottom: 64px;
 }
 
 .price-grid {
@@ -700,20 +734,30 @@ h3 {
 }
 
 .gallery-showcase {
-  padding-top: 92px;
+  padding-top: 70px;
+  padding-bottom: 54px;
 }
 
 .gallery-showcase .container {
   display: grid;
-  grid-template-columns: minmax(260px, 0.68fr) minmax(0, 1.32fr);
-  gap: 38px;
+  grid-template-columns: minmax(290px, 0.78fr) minmax(0, 1.22fr);
+  gap: 30px;
   align-items: start;
 }
 
 .gallery-showcase .section-heading {
   position: sticky;
   top: 118px;
-  padding-top: 8px;
+  margin-bottom: 0;
+  padding: 28px 26px 24px;
+  border: 1px solid rgba(59, 41, 31, 0.1);
+  border-radius: 28px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 253, 249, 0.94),
+    rgba(253, 245, 236, 0.74)
+  );
+  box-shadow: var(--shadow-soft);
 }
 
 .works-showcase {
@@ -1113,6 +1157,11 @@ h3 {
   margin-top: 16px;
 }
 
+.detail-section {
+  padding-top: 58px;
+  padding-bottom: 50px;
+}
+
 .detail-card {
   padding: 34px;
 }
@@ -1148,6 +1197,11 @@ h3 {
 
 .workflow-card-soft {
   background: rgba(255, 249, 242, 0.76);
+}
+
+.workflow {
+  padding-top: 60px;
+  padding-bottom: 52px;
 }
 
 .workflow-card:first-child {
@@ -1265,11 +1319,45 @@ h3 {
   padding: 0 0 22px;
 }
 
+.faq {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
 .contact-box {
   position: relative;
   padding: 34px;
   gap: 28px;
   box-shadow: var(--shadow-soft);
+  background:
+    linear-gradient(180deg, rgba(255, 253, 249, 0.96), rgba(252, 246, 239, 0.9));
+}
+
+.contact-box::before {
+  right: -32px;
+  bottom: -28px;
+  width: 180px;
+  height: 180px;
+  border-radius: 28px;
+  border: 1px solid rgba(141, 83, 50, 0.12);
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(141, 83, 50, 0.05) 0 1px,
+      transparent 1px 16px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(141, 83, 50, 0.05) 0 1px,
+      transparent 1px 16px
+    );
+  transform: rotate(8deg);
+  opacity: 0.44;
+}
+
+.contact {
+  padding-top: 36px;
+  padding-bottom: 26px;
 }
 
 .contact-copy,
@@ -1308,8 +1396,115 @@ h3 {
   color: rgba(255, 244, 235, 0.76);
 }
 
+.final-cta {
+  padding-top: 0;
+  padding-bottom: 36px;
+}
+
+.final-cta-box {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
+  gap: 26px;
+  padding: 34px;
+  overflow: hidden;
+  border: 1px solid rgba(59, 41, 31, 0.12);
+  border-radius: 34px;
+  background: linear-gradient(162deg, #31251f 0%, #1d1714 100%);
+  box-shadow: var(--shadow-strong);
+}
+
+.final-cta-box::after {
+  content: "";
+  position: absolute;
+  right: -22px;
+  top: -18px;
+  width: 220px;
+  height: 220px;
+  border-radius: 34px;
+  border: 1px solid rgba(255, 240, 228, 0.12);
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 240, 228, 0.05) 0 1px,
+      transparent 1px 18px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 240, 228, 0.05) 0 1px,
+      transparent 1px 18px
+    );
+  transform: rotate(10deg);
+}
+
+.final-cta-copy,
+.final-cta-meta {
+  position: relative;
+  z-index: 1;
+}
+
+.final-cta-copy .section-label {
+  background: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 244, 235, 0.92);
+}
+
+.final-cta-copy::after {
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(255, 244, 235, 0.62) 0 8px,
+    transparent 8px 15px
+  );
+}
+
+.final-cta-copy h2 {
+  margin-top: 16px;
+  max-width: 12ch;
+  color: #fff7ef;
+}
+
+.final-cta-copy p {
+  margin-top: 14px;
+  max-width: 40ch;
+  color: rgba(255, 242, 232, 0.78);
+}
+
+.final-cta-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.final-cta-points span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 240, 228, 0.12);
+  color: rgba(255, 242, 232, 0.88);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.final-cta-actions {
+  margin-top: 20px;
+}
+
+.final-cta-actions .btn-secondary {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 240, 228, 0.12);
+  color: #fff7ef;
+}
+
+.final-cta-actions .btn-vk {
+  background: rgba(79, 113, 159, 0.24);
+  border-color: rgba(126, 158, 203, 0.22);
+  color: #e2edff;
+}
+
 .site-footer {
-  padding: 24px 0 36px;
+  padding: 18px 0 34px;
 }
 
 .footer-inner {
@@ -1328,6 +1523,7 @@ h3 {
   .detail-grid,
   .workflow-grid,
   .contact-box,
+  .final-cta-box,
   .services .container,
   .prices-section .container,
   .gallery-showcase .container {
@@ -1338,7 +1534,6 @@ h3 {
   .prices-section .section-heading,
   .gallery-showcase .section-heading {
     position: static;
-    padding-top: 0;
   }
 
   .hero-aside {
@@ -1381,7 +1576,7 @@ h3 {
   }
 
   .section {
-    padding: 58px 0;
+    padding: 56px 0;
   }
 
   .header-inner {
@@ -1430,6 +1625,7 @@ h3 {
 
   .hero {
     padding-top: 20px;
+    padding-bottom: 54px;
   }
 
   .hero::before {
@@ -1492,7 +1688,7 @@ h3 {
   }
 
   .gallery-showcase {
-    padding-top: 52px;
+    padding-top: 56px;
   }
 
   .works-showcase {
@@ -1502,6 +1698,32 @@ h3 {
 
   .popular-services .container {
     padding: 24px;
+  }
+
+  .services .section-heading,
+  .prices-section .section-heading,
+  .gallery-showcase .section-heading,
+  .final-cta-box {
+    padding: 22px;
+  }
+
+  .services {
+    padding-top: 54px;
+    padding-bottom: 42px;
+  }
+
+  .prices-section,
+  .detail-section,
+  .workflow,
+  .faq,
+  .contact {
+    padding-top: 46px;
+    padding-bottom: 40px;
+  }
+
+  .final-cta {
+    padding-top: 0;
+    padding-bottom: 28px;
   }
 
   .service-item {
