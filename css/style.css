@@ -125,16 +125,7 @@ h3 {
   border-bottom: 1px solid rgba(59, 41, 31, 0.08);
 }
 
-.site-header::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -1px;
-  height: 1px;
-  background: var(--stitch);
-  opacity: 0.6;
-}
+
 
 .header-inner {
   display: flex;
@@ -374,16 +365,7 @@ h3 {
   box-shadow: 0 24px 48px rgba(83, 56, 39, 0.09);
 }
 
-.atelier-visual::before {
-  content: "";
-  position: absolute;
-  left: 20px;
-  top: 16px;
-  width: 128px;
-  height: 1px;
-  background: var(--stitch);
-  opacity: 0.75;
-}
+
 
 .atelier-visual::after {
   content: "";
@@ -577,51 +559,7 @@ h3 {
   margin-bottom: 30px;
 }
 
-.services .section-heading,
-.prices-section .section-heading,
-.gallery-showcase .section-heading {
-  padding-right: 110px;
-}
 
-.services .section-heading::before,
-.prices-section .section-heading::before,
-.gallery-showcase .section-heading::before {
-  content: "";
-  position: absolute;
-  top: 22px;
-  right: 22px;
-  width: 58px;
-  height: 58px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  opacity: 0.94;
-}
-
-.services .section-heading::before {
-  background-image: url("../images/sewing-button.svg");
-}
-
-.prices-section .section-heading::before {
-  background-image: url("../images/sewing-spool.svg");
-}
-
-.gallery-showcase .section-heading::before {
-  width: 82px;
-  height: 52px;
-  top: 26px;
-  background-image: url("../images/sewing-needle.svg");
-}
-
-.section-heading::after,
-.contact-copy::after,
-.final-cta-copy::after {
-  content: "";
-  width: 92px;
-  height: 1px;
-  margin-top: 8px;
-  background: var(--stitch);
-}
 
 .section-heading h2 {
   max-width: 14ch;
@@ -633,38 +571,9 @@ h3 {
   color: var(--muted);
 }
 
-.hero-copy::after {
-  content: "";
-  position: absolute;
-  pointer-events: none;
-}
-
 .hero-copy > * {
   position: relative;
   z-index: 1;
-}
-
-.hero-copy::after {
-  right: -18px;
-  bottom: -22px;
-  width: 212px;
-  height: 164px;
-  border: 1px solid rgba(141, 83, 50, 0.16);
-  background:
-    repeating-linear-gradient(
-        90deg,
-        rgba(141, 83, 50, 0.07) 0 1px,
-        transparent 1px 22px
-      ),
-    repeating-linear-gradient(
-        0deg,
-        rgba(141, 83, 50, 0.07) 0 1px,
-        transparent 1px 22px
-      ),
-    linear-gradient(180deg, rgba(236, 221, 207, 0.28), rgba(255, 252, 248, 0.08));
-  clip-path: polygon(18% 8%, 100% 0, 84% 92%, 0 100%);
-  transform: rotate(-7deg);
-  opacity: 0.48;
 }
 
 .service-list {
@@ -838,7 +747,6 @@ h3 {
 
 .prices-layout .section-heading {
   max-width: none;
-  min-height: 100%;
 }
 
 .price-grid {
@@ -859,19 +767,7 @@ h3 {
   overflow: hidden;
 }
 
-.price-card::before {
-  content: "";
-  position: absolute;
-  top: 18px;
-  right: 22px;
-  width: 56px;
-  height: 1px;
-  background: repeating-linear-gradient(
-    90deg,
-    rgba(141, 83, 50, 0.54) 0 4px,
-    transparent 4px 9px
-  );
-}
+
 
 .price-card-featured {
   grid-column: 1 / -1;
