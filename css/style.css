@@ -31,6 +31,7 @@
 }
 
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 96px;
 }
@@ -38,6 +39,7 @@ html {
 body {
   margin: 0;
   min-width: 320px;
+  overflow-x: hidden;
   background:
     radial-gradient(circle at top left, rgba(232, 210, 188, 0.92), transparent 26%),
     radial-gradient(circle at 88% 10%, rgba(225, 206, 185, 0.42), transparent 18%),
@@ -248,6 +250,10 @@ h3 {
   align-items: start;
 }
 
+.hero-grid {
+  align-items: stretch;
+}
+
 .hero-copy,
 .info-card,
 .service-item,
@@ -281,6 +287,8 @@ h3 {
 
 .hero-copy {
   position: relative;
+  display: flex;
+  flex-direction: column;
   padding: 38px 38px 34px;
   border-color: rgba(141, 83, 50, 0.14);
   box-shadow: 0 28px 60px rgba(58, 39, 28, 0.1);
@@ -305,6 +313,7 @@ h3 {
 }
 
 .hero-location {
+  align-self: flex-start;
   margin-bottom: 18px;
 }
 
@@ -346,6 +355,7 @@ h3 {
 
 .hero-aside {
   display: grid;
+  grid-template-rows: 1fr auto;
   gap: 14px;
   padding-top: 0;
   position: relative;
@@ -821,7 +831,7 @@ h3 {
 
 .prices-section .container.prices-layout {
   display: grid;
-  grid-template-columns: 420px 1fr !important;
+  grid-template-columns: minmax(320px, 0.55fr) 1fr;
   gap: 24px;
   align-items: start;
 }
@@ -890,6 +900,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
+  align-items: stretch;
 }
 
 .gallery-showcase {
@@ -1152,6 +1163,9 @@ h3 {
 }
 
 .compare-note-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   padding: 26px;
   background: linear-gradient(165deg, #342922 0%, #221a16 100%);
   color: #fff7ef;
